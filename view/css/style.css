@@ -1,0 +1,78 @@
+body {
+    color: white;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #333;
+}
+
+h1, h2 {
+    font-family: 'Exo 2', sans-serif;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 40px;
+}
+
+h1 {
+    color: #009933;
+    font-weight: 800;
+}
+
+h3 {
+    margin-top: 100px;
+}
+
+a.button {
+    color: inherit;
+    display: inline-block;
+    border: 1px solid #fff;
+    background-color: rgba(255,255,255,0);
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+a.button:hover {
+    color: #212121;
+    background: rgba(255,255,255,1);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 30px;
+}
+
+@media (max-height: 500px) {
+    
+    .logo {
+        margin-top: 50px;
+    }
+    
+    #footer {
+        position: relative;
+        margin: 30px 0;
+    }
+}
+
+.ease {
+    -moz-transition: all ease 0.5s;
+      -o-transition: all ease 0.5s;
+      -webkit-transition: all ease 0.5s;
+      transition: all ease 0.5s;
+}
+
+h3.animated {
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -o-animation-duration: 3s;
+}
