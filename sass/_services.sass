@@ -12,6 +12,11 @@ svg.service-icon
 	
 	h3, .base, .icon
 		@extend .ease
+	
+	.icon
+		-webkit-transform-origin: center
+		-ms-transform-origin: center
+		transform-origin: center
 
 	&:hover h3
 		color: $color-accent
@@ -20,8 +25,5 @@ svg.service-icon
 	&:hover .icon
 		fill: #fff
 		-webkit-transform: scale(0.9)
-		-webkit-transform-origin: center
 		-ms-transform: scale(0.9)
-		-ms-transform-origin: center
 		transform: scale(0.9)
-		transform-origin: center

@@ -39,6 +39,7 @@ ul.list-inline li {
 html, body {
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 header {
@@ -189,6 +190,27 @@ footer .footer-caption a:hover {
   }
 }
 
+.scroll-top {
+  width: 50px;
+  line-height: 50px;
+  margin: 0 20px 20px 0;
+  text-align: center;
+  font-weight: 600;
+  color: #71c837;
+  background-color: white;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 6;
+}
+@media (max-width: 600px) {
+  .scroll-top {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 svg.service-icon {
   width: 60%;
   height: auto;
@@ -201,6 +223,11 @@ svg.service-icon .base {
 .service-item {
   text-align: center;
 }
+.service-item .icon {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
 .service-item:hover h3 {
   color: #ffcc00;
 }
@@ -210,11 +237,8 @@ svg.service-icon .base {
 .service-item:hover .icon {
   fill: #fff;
   -webkit-transform: scale(0.9);
-  -webkit-transform-origin: center;
   -ms-transform: scale(0.9);
-  -ms-transform-origin: center;
   transform: scale(0.9);
-  transform-origin: center;
 }
 
 /*# sourceMappingURL=main.css.map */
