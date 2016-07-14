@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);
 .text-center, #content h2 {
   text-align: center;
 }
@@ -122,6 +123,15 @@ header .caption p {
 #content nav.navbar-affix ul li a:hover {
   font-weight: 600;
 }
+#content nav.navbar-affix-scrolled {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
 #content section {
   padding: 80px 0;
 }
@@ -183,6 +193,7 @@ svg.service-icon {
   width: 60%;
   height: auto;
   position: relative;
+  display: -webkit-flex;
 }
 svg.service-icon .base {
   opacity: 0;
@@ -199,8 +210,12 @@ svg.service-icon .base {
 }
 .service-item:hover .icon {
   fill: #fff;
-  width: 100px;
-  height: auto;
+  -webkit-transform: scale(0.9);
+  -webkit-transform-origin: center;
+  -ms-transform: scale(0.9);
+  -ms-transform-origin: center;
+  transform: scale(0.9);
+  transform-origin: center;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,6 +3,7 @@ svg.service-icon
 	width: 60%
 	height: auto
 	position: relative
+	display: -webkit-flex
 
 	.base
 		opacity: 0
@@ -19,5 +20,9 @@ svg.service-icon
 		opacity: 1
 	&:hover .icon
 		fill: #fff
-		width: 100px
-		height: auto
+		-webkit-transform: scale(0.9)
+		-webkit-transform-origin: center
+		-ms-transform: scale(0.9)
+		-ms-transform-origin: center
+		transform: scale(0.9)
+		transform-origin: center
