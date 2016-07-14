@@ -145,6 +145,18 @@
 		<script src="https://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
  		<script src="Hello World"></script>
- 		<script src="js/navfix.js"></script>
+ 		<script>
+ 			var na  = $(".navbar-affix");
+					nas = "navbar-affix-scrolled";
+					hdr = $('header').height();
+
+			$(window).scroll(function() {
+			  if( $(this).scrollTop() > hdr - na.height()) {
+			    na.addClass(nas);
+			  } else {
+			    na.removeClass(nas);
+			  }	
+			});
+ 		</script>
 	</body>
 </html>
