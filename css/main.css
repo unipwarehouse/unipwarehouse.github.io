@@ -193,7 +193,6 @@ svg.service-icon {
   width: 60%;
   height: auto;
   position: relative;
-  display: -webkit-flex;
 }
 svg.service-icon .base {
   opacity: 0;
