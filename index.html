@@ -46,14 +46,14 @@
 			<!-- NAVBAR AFFIX -->
 			<nav class="navbar-affix text-center">
 				<ul class="list-inline">
-					<li><a href="">services</a></li>
-					<li><a href="">works</a></li>
-					<li><a href="">ask me</a></li>
+					<li><a href="#services">services</a></li>
+					<li><a href="#works">works</a></li>
+					<li><a href="#footer">ask me</a></li>
 				</ul>
 			</nav>
 			<!-- /NAVBAR AFFIX -->
 
-			<section id="service">
+			<section id="services">
 				<div class="container">
 					<h2>THINGS I CAN DO</h2>
 					<div class="accent"></div>
@@ -116,7 +116,7 @@
 			</section>
 		</div>
 
-		<footer>
+		<footer id="footer">
 			<!-- Change the width and height values to suit you best -->
 			<div class="typeform">
 				<h2 class="text-center">GET IN TOUCH</h2>
@@ -145,18 +145,6 @@
 		<script src="https://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
  		<script src="Hello World"></script>
- 		<script>
- 			var na  = $(".navbar-affix");
-					nas = "navbar-affix-scrolled";
-					hdr = $('header').height();
-
-			$(window).scroll(function() {
-			  if( $(this).scrollTop() > hdr - na.height()) {
-			    na.addClass(nas);
-			  } else {
-			    na.removeClass(nas);
-			  }	
-			});
- 		</script>
+ 		<script src="js/navfix.js"></script>
 	</body>
 </html>
