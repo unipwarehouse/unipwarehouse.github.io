@@ -60,14 +60,14 @@ header
 
 	nav.navbar-affix
 		width: 100%
-		height: $navfix-height
+		line-height: $navfix-height
 		background-color: #fff
 		position: absolute
 		display: flex
 		top: $navfix-height - ($navfix-height*2)
 		left: 0
 		@media #{$bp-mobile}
-			height: $navfix-height-sm
+			line-height: $navfix-height-sm
 			top: $navfix-height-sm - ($navfix-height-sm*2)
 
 
@@ -75,7 +75,7 @@ header
 			margin: auto
 			li a
 				color: inherit
-				padding: 0 15px
+				padding: 0 10px
 				&:hover
 					font-weight: 600
 
@@ -157,9 +157,15 @@ footer
 	right: 0
 	z-index: 6
 
+	p
+		display: none
+
 	@media #{$bp-mobile}
 		width: 100%
 		margin: 0
+
+		p
+			display: inline
 	
 
 	

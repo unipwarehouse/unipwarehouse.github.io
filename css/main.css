@@ -101,17 +101,17 @@ header .caption p {
 }
 #content nav.navbar-affix {
   width: 100%;
-  height: 70px;
+  line-height: 50px;
   background-color: #fff;
   position: absolute;
   display: flex;
-  top: -70px;
+  top: -50px;
   left: 0;
 }
 @media (max-width: 600px) {
   #content nav.navbar-affix {
-    height: 42px;
-    top: -42px;
+    line-height: 30px;
+    top: -30px;
   }
 }
 #content nav.navbar-affix ul {
@@ -119,7 +119,7 @@ header .caption p {
 }
 #content nav.navbar-affix ul li a {
   color: inherit;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 #content nav.navbar-affix ul li a:hover {
   font-weight: 600;
@@ -204,10 +204,16 @@ footer .footer-caption a:hover {
   right: 0;
   z-index: 6;
 }
+.scroll-top p {
+  display: none;
+}
 @media (max-width: 600px) {
   .scroll-top {
     width: 100%;
     margin: 0;
+  }
+  .scroll-top p {
+    display: inline;
   }
 }
 
