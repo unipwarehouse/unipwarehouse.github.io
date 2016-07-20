@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Vampiro+One);
 .text-center, #content h2 {
   text-align: center;
 }
@@ -39,7 +40,7 @@ ul.list-inline li {
   margin: 0 0 40px auto;
 }
 
-.ease, a, body#posts #content .post-item a.thumb img, .service-item h3, .service-item .base, .service-item .icon {
+.ease, a, .post-item a.thumb img, .service-item h3, .service-item .base, .service-item .icon {
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
@@ -50,6 +51,10 @@ html, body {
   margin: 0;
   padding: 0;
   position: relative;
+}
+
+h1, h2 {
+  font-family: "Vampiro One", cursive;
 }
 
 @media (max-width: 768px) {
@@ -120,7 +125,6 @@ header .caption p {
   line-height: 55px;
   background-color: #fff;
   position: absolute;
-  display: flex;
   z-index: 5;
   top: -55px;
   left: 0;
@@ -132,7 +136,7 @@ header .caption p {
   }
 }
 #content nav.navbar-affix ul {
-  margin: auto;
+  margin: 0 auto;
 }
 #content nav.navbar-affix ul li {
   margin-bottom: 0;
@@ -180,7 +184,9 @@ header .caption p {
   overflow: hidden;
 }
 #content section#works .works-item a img {
+  width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 #content section#works .button {
   margin-top: 3rem;
@@ -230,7 +236,7 @@ footer .footer-caption ul li a:hover {
   color: #71c837;
   background-color: white;
   display: block;
-  border-radius: 5px;
+  border-radius: 50%;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -247,10 +253,15 @@ footer .footer-caption ul li a:hover {
   .scroll-top {
     width: 100%;
     margin: 0;
+    border-radius: 0;
   }
   .scroll-top p {
     display: inline;
   }
+}
+
+section#posts {
+  background-color: #f2f2f2;
 }
 
 body#posts header {
@@ -265,37 +276,38 @@ body#posts #content {
   background-color: #f2f2f2;
   background-image: none;
 }
-body#posts #content .post-item {
+
+.post-item {
   margin-bottom: 26.66667px;
 }
-body#posts #content .post-item a.thumb img {
+.post-item a.thumb img {
   max-width: 90%;
   border-radius: 50%;
-  -webkit-filter: saturate(0) blur(1px);
-  filter: saturate(0) blur(1px);
+  -webkit-filter: saturate(0);
+  filter: saturate(0);
 }
 @media (max-width: 768px) {
-  body#posts #content .post-item {
+  .post-item {
     text-align: center;
   }
-  body#posts #content .post-item a.thumb img {
+  .post-item a.thumb img {
     width: 200px;
     max-width: inherit;
     -webkit-filter: none;
     filter: none;
   }
-  body#posts #content .post-item .post-body {
+  .post-item .post-body {
     text-align: center;
   }
 }
-body#posts #content .post-item:hover a.thumb img {
-  -webkit-filter: saturate(100%) blur(0);
-  filter: saturate(100%) blur(0);
+.post-item:hover a.thumb img {
+  -webkit-filter: saturate(100%);
+  filter: saturate(100%);
 }
-body#posts #content .post-item h3 a {
+.post-item h3 a {
   color: inherit;
 }
-body#posts #content .post-item h3 a:hover {
+.post-item h3 a:hover {
   color: #71c837;
 }
 

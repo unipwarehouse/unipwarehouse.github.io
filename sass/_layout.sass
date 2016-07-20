@@ -3,6 +3,8 @@ html, body
 	padding: 0
 	position: relative
 
+h1, h2
+	font-family: 'Vampiro One', cursive
 a
 	@extend .ease
 
@@ -67,7 +69,6 @@ header
 		line-height: $navfix-height
 		background-color: #fff
 		position: absolute
-		display: flex
 		z-index: 5
 		top: $navfix-height - ($navfix-height*2)
 		left: 0
@@ -77,7 +78,7 @@ header
 
 
 		ul
-			margin: auto
+			margin: 0 auto
 			li
 				margin-bottom: 0
 				a
@@ -120,7 +121,9 @@ header
 					overflow: hidden
 
 					img
+						width: 100%
 						height: 100%
+						object-fit: cover
 
 
 			.button
@@ -170,7 +173,7 @@ footer
 	color: $color-primary
 	background-color: white
 	display: block
-	border-radius: $border-radius
+	border-radius: 50%
 	position: fixed
 	bottom: 0
 	right: 0
@@ -186,6 +189,7 @@ footer
 	@media #{$mobile}
 		width: 100%
 		margin: 0
+		border-radius: 0
 
 		p
 			display: inline
@@ -193,6 +197,9 @@ footer
 
 
 // POSTS
+
+section#posts
+	background-color: $color-grey
 	
 body#posts
 	
@@ -205,36 +212,36 @@ body#posts
 		background-color: $color-grey
 		background-image: none
 
-		.post-item
-			margin-bottom: $gutter/3
+.post-item
+	margin-bottom: $gutter/3
 
-			a.thumb
-				img
-					max-width: 90%
-					border-radius: 50%
-					-webkit-filter: saturate(0) blur(1px)
-					filter: saturate(0) blur(1px)
-					@extend .ease
+	a.thumb
+		img
+			max-width: 90%
+			border-radius: 50%
+			-webkit-filter: saturate(0)
+			filter: saturate(0)
+			@extend .ease
 
-			@media #{$mobile}
-				text-align: center
+	@media #{$mobile}
+		text-align: center
 
-				a.thumb img
-					width: 200px
-					max-width: inherit
-					-webkit-filter: none
-					filter: none
+		a.thumb img
+			width: 200px
+			max-width: inherit
+			-webkit-filter: none
+			filter: none
 
-				.post-body
-					text-align: center
+		.post-body
+			text-align: center
 
-			&:hover a.thumb img
-				-webkit-filter: saturate(100%) blur(0)
-				filter: saturate(100%) blur(0)
+	&:hover a.thumb img
+		-webkit-filter: saturate(100%)
+		filter: saturate(100%)
 
 
-			h3 a
-				color: inherit
-				&:hover
-					color: $color-primary
+	h3 a
+		color: inherit
+		&:hover
+			color: $color-primary
 	
