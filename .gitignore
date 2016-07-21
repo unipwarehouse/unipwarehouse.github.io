@@ -3,4 +3,4 @@ resource/
 services.html
 **/.sass-cache
 **/.sass-cache/*
-**/.fuse-hidden*
+**/.fuse_hidden*
