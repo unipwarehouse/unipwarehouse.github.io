@@ -107,6 +107,7 @@ header .caption {
   margin: auto;
 }
 header .caption h2 {
+  color: #ffcc00;
   font-size: 8rem;
   font-weight: 600;
 }
