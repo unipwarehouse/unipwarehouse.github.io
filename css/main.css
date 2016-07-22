@@ -57,6 +57,10 @@ h1, h2 {
   font-family: "Vampiro One", cursive;
 }
 
+.container {
+  max-width: 90rem;
+}
+
 @media (max-width: 768px) {
   .column {
     max-width: 100% !important;
@@ -69,36 +73,45 @@ header {
   background-color: #71c837;
   display: flex;
 }
-header nav {
+header nav.topnav {
   width: 100%;
   position: absolute;
   top: 0;
-  left: 100;
+  left: 0;
 }
-header nav h1 img {
+header nav.topnav h1, header nav.topnav ul, header nav.topnav li {
+  margin-bottom: 0;
+}
+header nav.topnav a.logo {
+  display: block;
+}
+header nav.topnav h1 {
+  font-size: inherit;
+}
+header nav.topnav h1 img {
   width: 170px;
   margin: 15px;
 }
 @media (max-width: 768px) {
-  header nav h1 img.logo-lg {
+  header nav.topnav h1 img.logo-lg {
     display: none;
   }
 }
-header nav h1 img.logo-sm {
+header nav.topnav h1 img.logo-sm {
   width: 34px;
   display: none;
 }
 @media (max-width: 768px) {
-  header nav h1 img.logo-sm {
+  header nav.topnav h1 img.logo-sm {
     display: inline;
   }
 }
-header nav a {
+header nav.topnav a {
   color: #fff;
   padding-right: 15px;
   line-height: 60px;
 }
-header nav a:hover {
+header nav.topnav a:hover {
   color: inherit;
   font-weight: 600;
 }
@@ -110,6 +123,11 @@ header .caption h2 {
   color: #ffcc00;
   font-size: 8rem;
   font-weight: 600;
+}
+@media (max-width: 768px) {
+  header .caption h2 {
+    font-size: 5rem;
+  }
 }
 header .caption p {
   font-size: 2.2rem;
@@ -172,29 +190,29 @@ header a.direction {
 #content section#works .accent {
   background-color: #71c837;
 }
-#content section#works .works-item {
+#content section#works .button {
+  margin-top: 3rem;
+}
+#content section .works-item {
   margin: 10px 0;
 }
-#content section#works .works-item:first-child {
+#content section .works-item:first-child {
   margin-left: 0;
 }
-#content section#works .works-item:last-child {
+#content section .works-item:last-child {
   margin-right: 0;
 }
-#content section#works .works-item a {
+#content section .works-item a {
   height: 200px;
   background-color: #71c837;
   display: block;
   border-radius: 5px;
   overflow: hidden;
 }
-#content section#works .works-item a img {
+#content section .works-item a img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-#content section#works .button {
-  margin-top: 3rem;
 }
 
 footer {
@@ -336,6 +354,61 @@ svg.service-icon .base {
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
+}
+
+body#work {
+  background-image: url("../img/pattern-bg.png");
+  background-attachment: fixed;
+}
+body#work .topnav {
+  background-color: #71c837;
+  position: fixed;
+  z-index: 5;
+}
+body#work header {
+  color: inherit;
+  height: auto;
+  background-color: transparent;
+}
+body#work header .work-thumb {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+body#work header .work-thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+body#work header .caption {
+  margin-top: 150px;
+}
+body#work #content {
+  background-color: transparent;
+  background-image: none;
+}
+body#work #content section {
+  padding: 40px 0;
+}
+body#work #content .spotlight {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+body#work #content .spotlight img {
+  margin: 0;
+}
+body#work #content a.figure {
+  display: inline-block;
+}
+body#work #content a.figure img {
+  margin: 3rem 0;
+  max-width: 100%;
+  max-height: 600px;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */
