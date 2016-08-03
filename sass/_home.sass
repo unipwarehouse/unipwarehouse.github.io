@@ -4,9 +4,13 @@ html, body
 	position: relative
 
 h1, h2
-	font-family: 'Vampiro One', cursive
+	font-family: 'Candal', cursive
+	font-weight: 400 !important
 a
 	@extend .ease
+
+.container
+	max-width: 90rem
 
 .column
 	@media #{$mobile}
@@ -16,36 +20,45 @@ header
 	color: #fff
 	height: 100vh
 	background-color: $color-primary
+	background-attachment: fixed
 	display: flex
 
-	nav
+	nav.topnav
 		width: 100%
 		position: absolute
 		top: 0
-		left: 100
+		left: 0
 
-		h1 img
-			width: 170px
-			margin: 15px
+		h1, ul, li
+			margin-bottom: 0
 
-			&.logo-lg
-				@media #{$mobile}
+		a.logo
+			display: block
+
+		h1 
+			font-size: inherit
+
+			img
+				width: 170px
+				margin: 15px
+
+				&.logo-lg
+					@media #{$mobile}
+						display: none
+
+				&.logo-sm
+					width: 34px
 					display: none
-
-			&.logo-sm
-				width: 34px
-				display: none
-				@media #{$mobile}
-					display: inline
+					@media #{$mobile}
+						display: inline
 
 		a
 			color: #fff
 			padding-right: 15px
 			line-height: 60px
-
+			font-weight: 600
 			&:hover
-				color: inherit
-				font-weight: 600
+				color: $color-accent
 
 	.caption
 		padding: 0 15px
@@ -54,9 +67,17 @@ header
 		h2
 			font-size: 8rem
 			font-weight: 600
+			@media #{$mobile}
+				font-size: 5rem
 
 		p
 			font-size: $font-medium
+
+	a.direction
+		color: inherit
+		font-size: 5rem
+		&:hover
+			color: $color-accent
 
 #content
 	background-image: url("../img/pattern-bg.png")
@@ -65,6 +86,7 @@ header
 	position: relative
 
 	nav.navbar-affix
+		color: $color-primary
 		width: 100%
 		line-height: $navfix-height
 		background-color: #fff
@@ -72,6 +94,7 @@ header
 		z-index: 5
 		top: $navfix-height - ($navfix-height*2)
 		left: 0
+		@extend .ease
 		@media #{$mobile}
 			line-height: $navfix-height-sm
 			top: $navfix-height-sm - ($navfix-height-sm*2)
@@ -87,15 +110,17 @@ header
 					vertical-align: middle
 					display: block
 					&:hover
-						font-weight: 600
+						color: $color-accent
 
 	nav.navbar-affix-scrolled
+		color: white
 		width: 100%
+		background-color: $color-primary
 		position: fixed
 		top: 0
-		-webkit-box-shadow: 0 3px 3px rgba(0,0,0,.3)
-		-moz-box-shadow: 0 3px 3px rgba(0,0,0,.3)
-		box-shadow: 0 3px 3px rgba(0,0,0,.3)
+		// -webkit-box-shadow: 0 3px 3px rgba(0,0,0,.3)
+		// -moz-box-shadow: 0 3px 3px rgba(0,0,0,.3)
+		// box-shadow: 0 3px 3px rgba(0,0,0,.3)
 
 	section
 		padding: 80px 0
@@ -107,27 +132,27 @@ header
 			.accent
 				background-color: $color-primary
 
-			.works-item
-				margin: 10px 0
-				&:first-child
-					margin-left: 0
-				&:last-child
-					margin-right: 0
-				a
-					height: 200px
-					background-color: $color-primary
-					display: block
-					border-radius: $border-radius
-					overflow: hidden
-
-					img
-						width: 100%
-						height: 100%
-						object-fit: cover
-
-
 			.button
 				margin-top: 3rem
+
+		.works-item
+			margin: 10px 0
+			&:first-child
+				margin-left: 0
+			&:last-child
+				margin-right: 0
+			a
+				height: 200px
+				background-color: $color-primary
+				display: block
+				border-radius: $border-radius
+				overflow: hidden
+
+				img
+					width: 100%
+					height: 100%
+					object-fit: cover
+
 
 	h2
 		@extend .text-center
@@ -146,16 +171,16 @@ footer
 			width: 280px
 
 		a
-			color: $color-accent
+			color: white
 			font-weight: 600
 			&:hover
-				color: inherit
+				color: $color-accent
 
 		ul li a
-			color: white
 			margin-right: 5px
-			&:hover
-				color: $color-accent
+
+		.footer-note span
+			color: $color-accent
 
 		@media #{$mobile}
 			.footer-logo, .footer-note
@@ -177,7 +202,7 @@ footer
 	position: fixed
 	bottom: 0
 	right: 0
-	z-index: 4
+	z-index: 3
 	&:hover
 		color: white
 		background-color: $color-accent
@@ -195,53 +220,3 @@ footer
 			display: inline
 
 
-
-// POSTS
-
-section#posts
-	background-color: $color-grey
-	
-body#posts
-	
-	header
-		height: 450px
-		@media #{$mobile}
-			height: 100vh
-
-	#content
-		background-color: $color-grey
-		background-image: none
-
-.post-item
-	margin-bottom: $gutter/3
-
-	a.thumb
-		img
-			max-width: 90%
-			border-radius: 50%
-			-webkit-filter: saturate(0)
-			filter: saturate(0)
-			@extend .ease
-
-	@media #{$mobile}
-		text-align: center
-
-		a.thumb img
-			width: 200px
-			max-width: inherit
-			-webkit-filter: none
-			filter: none
-
-		.post-body
-			text-align: center
-
-	&:hover a.thumb img
-		-webkit-filter: saturate(100%)
-		filter: saturate(100%)
-
-
-	h3 a
-		color: inherit
-		&:hover
-			color: $color-primary
-	
