@@ -1,0 +1,29 @@
+// Services Thumbnail
+svg.service-icon
+	width: 60%
+	height: auto
+	position: relative
+
+	.base
+		opacity: 0
+
+.service-item
+	text-align: center
+	
+	h3, .base, .icon
+		@extend .ease
+	
+	.icon
+		-webkit-transform-origin: center
+		-ms-transform-origin: center
+		transform-origin: center
+
+	&:hover h3
+		color: $color-accent
+	&:hover .base
+		opacity: 1
+	&:hover .icon
+		fill: #fff
+		-webkit-transform: scale(0.9)
+		-ms-transform: scale(0.9)
+		transform: scale(0.9)
