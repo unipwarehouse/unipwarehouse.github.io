@@ -1,0 +1,17 @@
+title: Unip Warehouse
+email: hello@unipwarehouse.com
+description: >
+  I'm Hanif, a freelance Javanese illustrator and graphic designer
+  Based in Pati, Central Java.
+baseurl: ""
+url: "http://www.unipwarehouse.com"
+
+# Build settings
+markdown: kramdown
+
+# Collections
+collections:
+  posts:
+    permalink: posts/:categories/:title
+  wokrs: 
+    permalink: works/:categories/:title
