@@ -5,3 +5,5 @@ services.html
 .sass-cache/
 **/.fuse_hidden*
 _site/
+_sass/milligram/
+**/resize.sh
