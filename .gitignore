@@ -6,3 +6,4 @@ services.html
 **/.fuse_hidden*
 _site/
 _sass/milligram/
+**/resize.sh

@@ -1,0 +1,41 @@
+<header id="home" {% if page.cover %}style="background-image: url('/img/posts/{{ page.cover }}');"{% endif %}>
+	<nav class="topnav clearfix">
+		<h1 class="float-left">
+			<a href="{{ site.url }}">
+				<img class="logo-lg" src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
+				<img class="logo-sm" src="{{ site.logo_small | prepend: site.baseurl }}" alt="{{ site.title }}">
+			</a>
+		</h1>
+
+		<ul class="list-inline float-right">
+		{% assign menu_items = site.pages | sort: 'index' %}
+		{% for menu in menu_items limit: 3 %}
+			<li><a href="{{ menu.url | prepend: site.baseurl }}">{{ menu.menu_title }}</a></li>
+		{% endfor %}
+		</ul>
+	</nav>
+
+	<div class="caption text-center">
+		{% if page.type == 'work' %}
+		<div class="work-thumb" data-aos="fade-up">
+			<img src="{{ page.thumb }}" alt="{{ page.title }}">
+		</div>
+		{% endif %}
+		<h2 class="text-center" data-aos="fade-up">{% if page.menu_title == 'Home' %}Hello!{% else %}{{ page.title }}{% endif %}</h2>
+		<p data-aos="fade-up" data-aos-delay="800">{% if page.menu_title == 'Home' %}{{ site.description }}{% else %}{{ page.payoff }}{% endif %}</p>
+
+		{% if page.type == 'post' %}
+			<p data-aos="fade-up" data-aos-delay="800">
+				In <a href="{{ site.baseurl }}/posts/{{ page.categories }}/">{{ page.categories }}</a>&emsp;-&emsp;{{ page.date | timeago }}&emsp;{% if page.tags %}{% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/{{ tag }}/" alt="">{{ tag | prepend: '#' | append: ' ' }}</a>{% endfor %}{% endif %}
+			</p>
+
+			{% if page.cover_credit %}
+				<small class="credit">Image credit to {{ page.cover_credit }}</small>
+			{% endif %}
+		{% endif %}
+
+		{% if page.arrow_down %}
+			<a class="direction" href="#content" data-aos="fade-up" data-aos-delay="1100"><span class="icon-arrow_downward"></span></a>
+		{% endif %}
+	</div>
+</header>

@@ -1,0 +1,16 @@
+<!-- jQuery -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+<script src="{{ "/js/jquery-1.12.4.js" | prepend: site.baseurl }}"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="{{ "/js/aos.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/scrollto.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
+<script>
+	$(document).ready(function() {
+		// Animation on scroll for icon dll.
+		AOS.init({
+			duration: 900,
+			once: true,
+		});
+	});
+</script>

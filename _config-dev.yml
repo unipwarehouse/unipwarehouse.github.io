@@ -5,7 +5,7 @@ description: >
   I'm Hanif, a freelance Javanese illustrator and graphic designer<br>
   Based in Pati, Central Java.
 baseurl: ""
-url: "http://unipwarehouse.github.io/"
+url: "http://localhost:4000"
 logo: "/img/logo-horizontal.svg"
 logo_small: "/img/logo-icon.svg"
 

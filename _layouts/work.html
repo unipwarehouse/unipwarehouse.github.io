@@ -1,0 +1,33 @@
+---
+layout: default
+type: work
+---
+{% include header.html %}
+
+<div id="content">
+	<section>
+		<div class="container text-center">
+
+			{% if page.spotlight %}
+				<div class="spotlight row">
+					<div class="column works-item"><a href="">
+						<img src="/img/works/girl.png" alt="">
+					</a></div>
+					<div class="column works-item"><a href="">
+						<img src="/img/works/hunny-bunny.jpg" alt="">
+					</a></div>
+					<div class="column works-item"><a href="">
+						<img src="/img/works/Lesi.jpg" alt="">
+					</a></div>
+				</div>
+			{% endif %}
+
+			{{ content }}
+
+			<a href="/works/" class="button button-outline">BACK TO LIST</a>
+
+		</div>
+	</section>
+</div>
+
+{% include footer.html %}
