@@ -1,0 +1,49 @@
+---
+layout: default
+type: work
+---
+{% include header.html %}
+
+<div id="content">
+	<section>
+		<div class="container text-center">
+			<div class="row text-left">
+				<div class="column">
+					
+					{% if page.spotlight %}
+						<div class="spotlight row">
+							<div class="column works-item"><a href="">
+								<img src="/img/works/girl.png" alt="">
+							</a></div>
+							<div class="column works-item"><a href="">
+								<img src="/img/works/hunny-bunny.jpg" alt="">
+							</a></div>
+							<div class="column works-item"><a href="">
+								<img src="/img/works/Lesi.jpg" alt="">
+							</a></div>
+						</div>
+					{% endif %}
+
+					{{ content }}
+					
+				</div>
+
+				<div class="column column-40">
+					<h4>Tags</h4>
+					{% for tag in page.tags %}
+						<a href="{{ site.baseurl }}/tags/{{ tag }}/">{{ tag | prepend: '#' }}</a>&ensp;
+					{% endfor %}
+				</div>
+			</div>
+			
+			<p class="pager">
+				<a href="javascript:history.back()" class="button button-outline">BACK TO LIST</a>
+			</p>
+
+			{% include disqus.html %}
+
+		</div>
+	</section>
+</div>
+
+{% include footer.html %}

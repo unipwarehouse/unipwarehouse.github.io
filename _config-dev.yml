@@ -1,0 +1,44 @@
+title: Unip Warehouse
+payoff: Believe in Design
+email: hello@unipwarehouse.com
+description: >
+  I'm Hanif, a freelance Javanese illustrator and graphic designer<br>
+  Based in Pati, Central Java.
+baseurl: ""
+url: "http://localhost:4000"
+logo: "/img/logo-horizontal.svg"
+logo_small: "/img/logo-icon.svg"
+
+# Build settings
+markdown: kramdown
+
+# Collections
+collections:
+  posts:
+    permalink: /posts/:categories/:title
+  works:
+    defaults:
+      type: work
+      layout: work
+    permalink: /works/:categories/:title
+    output: true
+
+# Date settings
+jekyll_timeago:
+  depth: 1 # Level of detail
+  today: 'today'
+  yesterday: 'yesterday'
+  tomorrow: 'tomorrow'
+  and: 'and'
+  suffix: 'ago'
+  prefix: ''
+  suffix_future: ''
+  prefix_future: 'in'
+  years: 'years'
+  year: 'year'
+  months: 'months'
+  month: 'month'
+  weeks: 'weeks'
+  week: 'week'
+  days: 'days'
+  day: 'day'

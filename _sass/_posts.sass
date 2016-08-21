@@ -4,6 +4,11 @@ section#posts
 	background-color: $color-grey
 	
 body#posts
+	header
+		.topnav
+			background-color: $color-primary
+			position: fixed
+			z-index: 5
 
 	#content
 		background-color: $color-grey
@@ -13,13 +18,15 @@ body#posts
 	margin-bottom: $gutter/3
 
 	a.thumb
+		display: block
+
 		img
 			max-width: 90%
 			border-radius: 50%
 			-webkit-filter: saturate(0)
 			filter: saturate(0)
 			@extend .ease
-
+			
 	@media #{$mobile}
 		text-align: center
 

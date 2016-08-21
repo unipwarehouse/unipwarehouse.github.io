@@ -7,6 +7,12 @@ body#post
 		position: fixed
 		z-index: 5
 
+		h1 a
+			display: block
+
+			img
+				margin: 15px 15px 0
+
 	header
 		min-height: 100vh
 		background-position: center center
@@ -17,16 +23,16 @@ body#post
 			width: 100%
 			height: 100%
 			display: flex
-			flex-direction: column
-			background-color: rgba(black, 0.3)
+			align-items: center
+			background-color: rgba(black, 0.5)
 			@extend .ease
-			&:hover
-				background-color: rgba(black, 0.5)
 			h2
 				margin-top: auto
 				text-shadow: 0 0 10px rgba(black, 0.5)
 			p
 				margin-bottom: auto
+				font-size: 1.7rem
+
 				a:hover
 					color: $color-accent
 
@@ -34,12 +40,22 @@ body#post
 	#content
 		background-image: none
 
-		p
-			font-size: 18px
-			&:first-child
-				color: darken($color-grey, 20%)
-				font-family: 'Merriweather', serif
-				font-size: 1.6em
+		article 
+			& > p:first-child
+				color: darken($color-grey, 40%)
+				font-family: 'Exo 2', sans-serif
+				font-size: 1.8em
+
+			p
+				font-size: 18px
+
+			ul
+				list-style-position: outside
+				li
+					margin-left: 20px
+
+			blockquote
+				font-family: 'Exo 2', sans-serif
 
 		a.image
 			display: inline-block

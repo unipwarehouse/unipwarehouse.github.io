@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+	<body{% if page.index == 2 %} id="works"{% elsif page.index == 3 %} id="posts"{% elsif page.type == 'work' %} id="work"{% elsif page.type == 'post' %} id="post"{% endif %}>
+
+		{{ content }}
+
+		<a href="#home" class="scroll-top" data-aos="slide-up" data-aos-anchor="#content" data-aos-once="false">
+			<span class="icon-arrow_upward"></span>
+			<p>Top</p>
+		</a>
+
+		{% include javascript.html %}
+	</body>
+</html>
