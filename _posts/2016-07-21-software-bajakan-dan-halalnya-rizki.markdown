@@ -6,7 +6,7 @@ type: post
 categories: misc
 cover: liputan6.com-software-bajakan.jpg
 cover_credit: www.liputan6.com
-tags: software app bajakan rizki halal
+tags: software app bajakan rizki halal downloadfree photoshop coreldraw
 ---
 
 Membahas masalah pembajakan software memang tidak ada habisnya, terutama di Indonesia. Bermacam alasan muncul demi melegalkan masyarakat kita untuk menggunakan software bajakan. Alasan mengapa masyarakat memakainya diantaranya mulai dari minimnya informasi penggunaan software sampai dengan faktor ekonomi dalam hal pembelian lisensi software.
@@ -39,7 +39,11 @@ Tentu beberapa pertanyaan diatas akan membuat kita berfikir lagi pada akibat dan
 
 > “Berkata Nabi S.A.W kepada Sa'ad ibnu Abi Waqas: … Demi dzat yang diri Muhammad berada di tanganNya, sesungguhnya hamba yang memasukkan suapan haram ke dalam perutnya niscaya tidak akan diterima amalnya selama 40 hari, dan dimana hamba yang tumbuh dagingnya dari barang haram dan riba, maka neraka lebih berhak baginya.” HR. Thabrani
 
-Fatwa MUI juga sudah keluar tentang hukum penggunaan software bajakan. Berikut videonya:
+Perhatikan video dibawah ini:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pTkJFkRTm50" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l7wvHDooGl8" frameborder="0" allowfullscreen></iframe>
 
 ### Opini Egois Masyarakat
 Suatu hari ada teman yang berkomentar tentang penggunaan software *proprietary*/ berbayar secara legal, yaitu dengan membeli lisensinya. Dia berkata bahwa hasil dari penjualan software itu akan digunakan untuk mendanai kaum Zionis atau kaum lain yang disinyalir menjadi musuh Islam. Ada juga yang berfikiran bahwa para pemilik software berbayar terlalu rakus dan berlebihan dalam menetapkan harga. Opini-opini seperti ini bisa dikatakan opini egois yang sebenarnya itu diluar kewenangan kita untuk ikut campur, namun tetap memaksakan kewengangan itu dengan cara menghalalkan praktek pembajakan software.
@@ -60,6 +64,12 @@ Saya kurang pede sebenarnya mengeluarkan aspirasi dalam bentuk artikel ini karen
 Pesan saya, jangan pernah ragu meninggalkan yang haram hanya karena itu sudah menjadi tradisi. Kita tidak pernah tahu apa balasan dari Allah terhadap perbuatan kita sekecil apapun, sekalipun itu hanya pembajakan software atau sebaliknya rasa khawatir di dalam hati pada sesuatu yang haram.
 
 > “Maka sesungguhnya kebaikan semisal biji sawi pun akan dihitung, dan kejelekan semisal biji sawi pun akan dihitung.”
+
+Bagaimana menurut teman-teman sekalian? Berikan komentar kalian di bawah ya :)
+
+#### Sumber lain
+- [Ketika membajak software sudah tidak merasa berdosa](https://ridjam.wordpress.com/2013/12/20/ketika-membajak-software-sudah-tidak-merasa-berdosa/)
+- [Dalil-dalil tentang larangan penggunaan software bajakan](https://ridjam.wordpress.com/2012/12/15/dalil-dalil-tentang-larangan-penggunaan-software-bajakan/)
 
 [software-opensource]: https://ridjam.wordpress.com/2014/02/19/menjaga-kehormatan-dengan-software-alternatif/
 

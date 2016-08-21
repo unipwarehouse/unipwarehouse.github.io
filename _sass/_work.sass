@@ -1,6 +1,7 @@
 // WORK ITEM
 
 body#work
+	background-color: $color-primary
 	background-image: url("../img/pattern-bg.png")
 	background-attachment: fixed
 	.topnav
@@ -13,27 +14,17 @@ body#work
 		height: auto
 		background-color: transparent
 
-		.work-thumb
-			max-width: 300px
-			max-height: 300px
-			@media #{$mobile}
-				max-width: 200px
-				max-height: 200px
-			margin: 0 auto
-			border-radius: 50%
-			overflow: hidden
-			margin-bottom: 3rem
-			img
-				width: 100%
-				height: 100%
-				-o-object-fit: cover
-				object-fit: cover
+		.work-item
+			max-width: 100%
+			max-height: 800px
+			border-radius: $border-radius
+			box-shadow: 0 3px 5px rgba(0,0,0,.3)
 
 		.caption
 			margin-top: 150px
 
 			h2
-				color: $color-accent
+				color: $color-primary
 
 	#content
 		background-color: transparent
@@ -54,3 +45,9 @@ body#work
 				max-width: 100%
 				max-height: 600px
 				border-radius: $border-radius
+
+		.pager, .comment
+			margin-top: 50px
+
+		.comment
+			text-align: left
