@@ -1,7 +1,7 @@
 <header id="home" {% if page.cover %}style="background-image: url('/img/posts/{{ page.cover }}');"{% endif %}>
 	<nav class="topnav clearfix">
 		<h1 class="float-left">
-			<a href="{{ site.url }}">
+			<a href="{{ site.url | append: site.baseurl }}">
 				<img class="logo-lg" src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
 				<img class="logo-sm" src="{{ site.logo_small | prepend: site.baseurl }}" alt="{{ site.title }}">
 			</a>
