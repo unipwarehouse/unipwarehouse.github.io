@@ -1,4 +1,4 @@
-<header id="home" {% if page.cover %}style="background-image: url('/img/posts/{{ page.cover }}');"{% endif %}>
+<header id="home" {% if page.cover %}style="background-image: url('{{ site.baseurl }}/img/posts/{{ page.cover }}');"{% endif %}>
 	<nav class="topnav clearfix">
 		<h1 class="float-left">
 			<a href="{{ site.url | append: site.baseurl }}">
