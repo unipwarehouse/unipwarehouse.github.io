@@ -21,7 +21,7 @@
 		{% endif %}
 			<h2 class="text-center" data-aos="fade-up">{% if page.menu_title == 'Home' %}Hello!{% else %}{{ page.title }}{% endif %}</h2>
 			{% if page.type == 'work' %}
-			<p>{% for cat in page.categories %}In <a href="{{ site.baseurl }}/works/{{ cat }}/">{{ cat }}</a> {% endfor %}{{ page.date | timeago }}</p>
+			<p>{% for cat in page.categories %}In <a href="{{ site.baseurl }}/works/{{ cat }}/">{{ cat }}</a> {% endfor %}{{ page.date | timeago | date_to_string }}</p>
 			<img class="work-item" src="{{ page.item | prepend: site.baseurl }}" alt="{{ page.title }}">
 			{% endif %}
 
@@ -29,7 +29,7 @@
 
 			{% if page.type == 'post' %}
 				<p data-aos="fade-up" data-aos-delay="800">
-					In <a href="{{ site.baseurl }}/posts/{{ page.categories }}/">{{ page.categories }}</a>&emsp;-&emsp;{{ page.date | timeago }}&emsp;{% if page.tags %}{% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/{{ tag }}/" alt="">{{ tag | prepend: '#' | append: ' ' }}</a>{% endfor %}{% endif %}
+					In <a href="{{ site.baseurl }}/posts/{{ page.categories }}/">{{ page.categories }}</a>&emsp;-&emsp;{{ page.date | timeago | date_to_string }}&emsp;{% if page.tags %}{% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/{{ tag }}/" alt="">{{ tag | prepend: '#' | append: ' ' }}</a>{% endfor %}{% endif %}
 				</p>
 
 				{% if page.cover_credit %}
