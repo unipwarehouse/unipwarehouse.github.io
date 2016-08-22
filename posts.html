@@ -30,7 +30,7 @@ arrow_down: true
 
 					{{ post.excerpt }}
 
-					<p>{% if post.categories %}In {% for cat in post.categories %}<a href="{{ site.baseurl }}/posts/{{ cat }}/">{{ cat }}</a> {% endfor %}&emsp;-&emsp;{% endif %}{{ post.date | timeago }}&emsp;{% if post.tags %}<span class="tags">{% for tag in post.tags %}<a href="{{ site.baseurl }}/tags/{{ tag }}/">{{ tag | prepend: '#' }}</a> {% endfor %}</span>{% endif %}</p>
+					<p>{% if post.categories %}In {% for cat in post.categories %}<a href="{{ site.baseurl }}/posts/{{ cat }}/">{{ cat }}</a> {% endfor %}&emsp;-&emsp;{% endif %}{{ post.date | timeago | date_to_string }}&emsp;{% if post.tags %}<span class="tags">{% for tag in post.tags %}<a href="{{ site.baseurl }}/tags/{{ tag }}/">{{ tag | prepend: '#' }}</a> {% endfor %}</span>{% endif %}</p>
 				</div>
 			</div>
 		{% endfor %}
