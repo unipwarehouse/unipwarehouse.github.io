@@ -4,7 +4,7 @@ email: hello@unipwarehouse.com
 description: >
   I'm Hanif, a freelance Javanese illustrator and graphic designer<br>
   Based in Pati, Central Java.
-baseurl: "/alpha/"
+baseurl: "/alpha"
 url: "http://unipwarehouse.github.io/"
 logo: "/img/logo-horizontal.svg"
 logo_small: "/img/logo-icon.svg"
