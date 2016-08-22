@@ -41,9 +41,9 @@ Tentu beberapa pertanyaan diatas akan membuat kita berfikir lagi pada akibat dan
 
 Perhatikan video dibawah ini:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pTkJFkRTm50" frameborder="0" allowfullscreen></iframe>
+<iframe max-width="560" height="315" src="https://www.youtube.com/embed/pTkJFkRTm50" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/l7wvHDooGl8" frameborder="0" allowfullscreen></iframe>
+<iframe max-width="560" height="315" src="https://www.youtube.com/embed/l7wvHDooGl8" frameborder="0" allowfullscreen></iframe>
 
 ### Opini Egois Masyarakat
 Suatu hari ada teman yang berkomentar tentang penggunaan software *proprietary*/ berbayar secara legal, yaitu dengan membeli lisensinya. Dia berkata bahwa hasil dari penjualan software itu akan digunakan untuk mendanai kaum Zionis atau kaum lain yang disinyalir menjadi musuh Islam. Ada juga yang berfikiran bahwa para pemilik software berbayar terlalu rakus dan berlebihan dalam menetapkan harga. Opini-opini seperti ini bisa dikatakan opini egois yang sebenarnya itu diluar kewenangan kita untuk ikut campur, namun tetap memaksakan kewengangan itu dengan cara menghalalkan praktek pembajakan software.
