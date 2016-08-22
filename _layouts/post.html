@@ -8,6 +8,8 @@ type: post
 		<div class="container">
 			<article>
 				{{ content }}
+
+				{% if page.tags %}<p class="tags">{% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/{{ tag }}/" alt="">{{ tag | prepend: '#' | append: ' ' }}</a>{% endfor %}</p>{% endif %}
 			</article>
 			
 			{% include disqus.html %}
