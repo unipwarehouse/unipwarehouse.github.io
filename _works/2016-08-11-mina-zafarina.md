@@ -7,7 +7,7 @@ item: /img/works/nana.jpg
 thumb: /img/works/nana.jpg
 tags: girls beauty cute hijab illustration digitalpainting
 ---
-Exercise for today.
+Exercise for today.  
 For my BFF end ever...
 
 Tools:
