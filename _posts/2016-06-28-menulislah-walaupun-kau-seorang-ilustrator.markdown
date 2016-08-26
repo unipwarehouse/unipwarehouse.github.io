@@ -4,7 +4,7 @@ thumb: bokmal.com.ua-beatrice-alemagna.jpg
 categories: misc
 type: post
 tags: copywriting illustrator harusmenulis
-cover: bokmal.com.ua-beatrice-alemagna.jpg
+cover: /posts/bokmal.com.ua-beatrice-alemagna.jpg
 cover_credit: bokmal.com.ua
 ---
 Beberapa kali belakangan ini saya sering dapat email dari [Medium][medium]. Isinya tentang *daily-diggest*nya yang berisi artikel-artikel menarik dan berkualitas dari member Medium di berbagai penjuru dunia. Dan dari sini saya mulai mengerti betapa pentingnya menulis ~~dan menyesal meng*uninstall* aplikasi Medium beberapa waktu lalu~~.
