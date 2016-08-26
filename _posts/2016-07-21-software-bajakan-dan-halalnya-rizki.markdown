@@ -4,7 +4,7 @@ thumb: liputan6.com-software-bajakan.jpg
 layout: post
 type: post
 categories: misc
-cover: liputan6.com-software-bajakan.jpg
+cover: /posts/liputan6.com-software-bajakan.jpg
 cover_credit: www.liputan6.com
 tags: software app bajakan rizki halal downloadfree photoshop coreldraw
 ---
