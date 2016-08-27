@@ -23,6 +23,7 @@ body#post
 			height: 100%
 			display: flex
 			align-items: center
+			justify-content: center
 			background-color: rgba(black, 0.5)
 			@extend .ease
 			h2
@@ -61,6 +62,10 @@ body#post
 			blockquote
 				font-family: 'Exo 2', sans-serif
 
+			@media #{$mobile}
+				iframe
+					width: 100%
+					
 		a.image
 			display: inline-block
 			margin-bottom: 25px
@@ -69,6 +74,9 @@ body#post
 				max-width: 100%
 				max-height: 600px
 				border-radius: $border-radius
+
+	p.pager
+		margin-top: 50px
 
 	.comment
 		margin-top: 80px
