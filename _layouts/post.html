@@ -11,8 +11,14 @@ type: post
 
 				{% if page.tags %}<p class="tags">{% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/{{ tag }}/" alt="">{{ tag | prepend: '#' | append: ' ' }}</a>{% endfor %}</p>{% endif %}
 			</article>
-			
-			{% include disqus.html %}
+
+			<p class="pager text-center">
+				<a href="javascript:history.back()" class="button button-outline">BACK TO LIST</a>
+			</p>
+
+			{% if site.environment == 'production' %}
+				{% include disqus.html %}
+			{% endif %}
 		</div>
 	</section>
 </div>
