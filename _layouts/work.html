@@ -39,8 +39,9 @@ type: work
 			<p class="pager">
 				<a href="javascript:history.back()" class="button button-outline">BACK TO LIST</a>
 			</p>
-
-			{% include disqus.html %}
+			{% if site.environment == 'production' %}
+				{% include disqus.html %}
+			{% endif %}
 
 		</div>
 	</section>
