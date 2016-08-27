@@ -1,4 +1,5 @@
 <footer id="footer">
+	{% if site.environment == 'production' %}
 	<!-- Change the width and height values to suit you best -->
 	<div class="typeform">
 		<h2 class="text-center">Get In Touch</h2>
@@ -8,6 +9,7 @@
 		<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
 		<div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"><a href="https://www.typeform.com/examples/forms/?utm_campaign=CeZYBj&amp;utm_source=typeform.com-172773-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-onlineform&amp;utm_term=EN" style="color: #999" target="_blank"></div>
 	</div>
+	{% endif %}
 
 	<div class="container">
 		<div class="row footer-caption">
@@ -21,13 +23,15 @@
 			</div>
 			<div class="column column-45 column-offset-10 footer-note">
 				<ul class="list-inline">
-				{% for menu in menu_items %}
-					<li><a href="{{ menu.url | prepend: site.baseurl }}">{{ menu.menu_title }}</a></li>	
+				{% for page in menu_pages %}
+					{% if page.menu_title %}
+					<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.menu_title }}</a></li>	
+					{% endif %}
 				{% endfor %}
 				</ul>
 
 				<p>Crafted with <span class="icon-favorite"></span> by Unip Warehouse<br />
-				Built with <a href="">Jekyll</a>, hosted on <a href="">Github</a><br />
+				Built with <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, hosted on <a href="http://github.com" target="_blank">Github</a><br />
 				Copyright &copy; 2016</p>
 			</div>
 		</div>
