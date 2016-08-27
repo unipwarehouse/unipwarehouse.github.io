@@ -8,16 +8,18 @@
 		</h1>
 
 		<ul class="list-inline float-right">
-		{% assign menu_items = site.pages | sort: 'index' %}
-		{% for menu in menu_items limit: 3 %}
-			<li><a href="{{ menu.url | prepend: site.baseurl }}">{{ menu.menu_title }}</a></li>
+		{% assign menu_pages = site.pages | sort: 'index' %}
+		{% for page in menu_pages limit 3 %}
+			{% if page.menu_title %}
+			<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.menu_title }}</a></li>
+			{% endif %}
 		{% endfor %}
 		</ul>
 	</nav>
 
 	<div class="caption text-center">
 		{% if page.type == 'post' %}
-		<div>
+		<div class="container">
 		{% endif %}
 			<h2 class="text-center" data-aos="fade-up">{% if page.menu_title == 'Home' %}Hello!{% else %}{{ page.title }}{% endif %}</h2>
 			{% if page.type == 'work' %}
@@ -31,10 +33,6 @@
 				<p data-aos="fade-up" data-aos-delay="800">
 					In <a href="{{ site.baseurl }}/posts/{{ page.categories }}/">{{ page.categories }}</a>&emsp;-&emsp;{{ page.date | timeago | date_to_string }}
 				</p>
-
-				{% if page.cover_credit %}
-					<small class="credit">Image credit to {{ page.cover_credit }}</small>
-				{% endif %}
 			{% endif %}
 
 			{% if page.arrow_down %}
@@ -43,6 +41,9 @@
 
 		{% if page.type == 'post' %}
 		</div>
+		{% endif %}
+		{% if page.cover_credit %}
+			<small class="credit">Image credit to {{ page.cover_credit }}</small>
 		{% endif %}
 	</div>
 </header>
