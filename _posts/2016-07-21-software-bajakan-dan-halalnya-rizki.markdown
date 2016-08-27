@@ -1,8 +1,6 @@
 ---
 title: Software Bajakan dan Halalnya Rizki
 thumb: liputan6.com-software-bajakan.jpg
-layout: post
-type: post
 categories: misc
 cover: /posts/liputan6.com-software-bajakan.jpg
 cover_credit: www.liputan6.com
@@ -41,12 +39,16 @@ Tentu beberapa pertanyaan diatas akan membuat kita berfikir lagi pada akibat dan
 
 Perhatikan video dibawah ini:
 
-<iframe max-width="560" height="315" src="https://www.youtube.com/embed/pTkJFkRTm50" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pTkJFkRTm50" frameborder="0" allowfullscreen></iframe>  
 
-<iframe max-width="560" height="315" src="https://www.youtube.com/embed/l7wvHDooGl8" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l7wvHDooGl8" frameborder="0" allowfullscreen></iframe>  
+
+Fatwa MUI tentang software bajakan:
+
+> Setiap bentuk pelanggaran terhadap HKI, termasuk namun tidak terbatas pada menggunakan, mengungkapkan, mem-buat, memakai, menjual, mengimpor, meng-ekspor, mengedarkan, menyerah-kan, menyediakan, mengumumkan, memperbanyak, menjiplak, memalsu, membajak HKI milik orang lain secara tanpa hak merupakan kezaliman dan hukumnya adalah haram. - *Majelis Ulama Indonesia*
 
 ### Opini Egois Masyarakat
-Suatu hari ada teman yang berkomentar tentang penggunaan software *proprietary*/ berbayar secara legal, yaitu dengan membeli lisensinya. Dia berkata bahwa hasil dari penjualan software itu akan digunakan untuk mendanai kaum Zionis atau kaum lain yang disinyalir menjadi musuh Islam. Ada juga yang berfikiran bahwa para pemilik software berbayar terlalu rakus dan berlebihan dalam menetapkan harga. Opini-opini seperti ini bisa dikatakan opini egois yang sebenarnya itu diluar kewenangan kita untuk ikut campur, namun tetap memaksakan kewengangan itu dengan cara menghalalkan praktek pembajakan software.
+Suatu hari ada teman yang berkomentar tentang penggunaan software *proprietary* berbayar secara legal, yaitu dengan membeli lisensinya. Dia berkata bahwa hasil dari penjualan software itu akan digunakan untuk mendanai kaum Zionis atau kaum lain yang disinyalir menjadi musuh Islam. Ada juga yang berfikiran bahwa para pemilik software berbayar terlalu rakus dan berlebihan dalam menetapkan harga. Opini-opini seperti ini bisa dikatakan opini egois yang sebenarnya itu diluar kewenangan kita untuk ikut campur, namun tetap memaksakan kewengangan itu dengan cara menghalalkan praktek pembajakan software.
 
 Lebih baik mari kita buat perumpamaan lagi. Ketika kita melihat sepatu di sebuah mall yang menarik perhatian, kita ingin membelinya. Kita tau ini akan jadi dilema di malam hari nanti kalau sampai sepatu itu tidak kita beli. Lalu setelah kita lihat ternyata harganya melebihi kemampuan dompet. Tidak mungkin juga menawar karena sudah pasti itu harga pas. *Nggak lucu dong* kalau kita beli sepatu di mall dengan menawar harga segala? Lalu bagaimana? Tentu pilihannya hanya dua. Kita kerja keras dan menabung dulu atau beli waktu itu juga. Tentu tidak ada alasan mentang-mentang harganya mahal lalu tiba-tiba membolehkan kita membawa pulang sepatu itu secara cuma-cuma. Bahkan saya yakin walaupun kita memasang wajah memelaspun belum tentu si pemilik toko menggratiskan sepatu itu, yang ada mungkin malah melayangkan sepatu yang dia pakai ke wajah kita. Apa lagi sampai kita menanyai si empunya toko,”Mbak sepatunya mahal banget dah! Nanti hasil jualan sepatunya mau buat apa sih? Pasti buat danain ISIS ya? Secara penampilan situ juga kaya orang fanatik gitu, udah jenggotan, pakai cadar lagi. Saya ambil aja ah sepatunya. Dasar teroris!” kita sudah menghina orang, merampok milik orang pula. Saya rasa dia akan serta merta menjawab,”Songong banget si lu!”, sambil mengasah golok miliknya dan seterusnya. 
 

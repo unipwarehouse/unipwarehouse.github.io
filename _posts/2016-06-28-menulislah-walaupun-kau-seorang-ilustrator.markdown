@@ -1,8 +1,6 @@
 ---
-layout: post
 thumb: bokmal.com.ua-beatrice-alemagna.jpg
 categories: misc
-type: post
 tags: copywriting illustrator harusmenulis
 cover: /posts/bokmal.com.ua-beatrice-alemagna.jpg
 cover_credit: bokmal.com.ua

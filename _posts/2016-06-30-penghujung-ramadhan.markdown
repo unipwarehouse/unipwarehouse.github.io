@@ -1,9 +1,7 @@
 ---
 title: Penghujung Ramadhan
-layout: post
 categories: misc
 published: false
-type: post
 ---
 *Ramadhan*  
 Penghujungmu telah terlihat
