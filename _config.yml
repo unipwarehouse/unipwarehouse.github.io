@@ -12,6 +12,11 @@ logo_small: "/img/logo-icon.svg"
 # Build settings
 markdown: kramdown
 
+exclude:
+  - resource
+  - Gemfile
+  - Gemfile.lock
+
 # Collections
 collections:
   posts:
@@ -23,22 +28,19 @@ collections:
     permalink: /works/:categories/:title
     output: true
 
-# Date settings
-jekyll_timeago:
-  depth: 1 # Level of detail
-  today: 'today'
-  yesterday: 'yesterday'
-  tomorrow: 'tomorrow'
-  and: 'and'
-  suffix: 'ago'
-  prefix: ''
-  suffix_future: ''
-  prefix_future: 'in'
-  years: 'years'
-  year: 'year'
-  months: 'months'
-  month: 'month'
-  weeks: 'weeks'
-  week: 'week'
-  days: 'days'
-  day: 'day'
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+      type: "post"
+  -
+    scope:
+      type: "works"
+    values:
+      layout: "work"
+      type: "work"
+
+sass:
+  style: compressed
