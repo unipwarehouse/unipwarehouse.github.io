@@ -38,6 +38,7 @@ header
 		position: absolute
 		top: 0
 		left: 0
+		margin-bottom: -5px
 
 		h1, ul, li
 			margin-bottom: 0
@@ -60,6 +61,8 @@ header
 					width: 34px
 					display: none
 					@media #{$mobile}
+						width: auto
+						height: 25px
 						display: inline
 
 		a
@@ -67,6 +70,8 @@ header
 			padding-right: 15px
 			line-height: 60px
 			font-weight: 600
+			@media #{$mobile}
+				line-height: 50px
 			&:hover
 				color: $color-accent
 
@@ -91,8 +96,6 @@ header
 			color: $color-accent
 
 #content
-	background-image: url("../img/pattern-bg.png")
-	background-color: $color-grey
 	background-attachment: fixed
 	position: relative
 
