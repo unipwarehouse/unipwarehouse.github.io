@@ -7,9 +7,9 @@
 	<meta name="keyword" content="{% for tag in page.tags %}{{ tag | append: ', ' }}{% endfor %}">
 
 	<!-- Open Graph -->
-	{% if page.type == 'post' %}
-	<meta content="{{ site.url }}{{ site.baseurl }}/img{{ page.cover }}" property="og:image">
-	{% elsif page.type == 'work' %}
+	{% if page.menu_title %}
+	<meta content="{{ site.url }}{{ site.baseurl }}/img/logo-high-resolution.png" property="og:image">
+	{% elsif page.item %}
 	<meta content="{{ site.url }}{{ site.baseurl }}/img{{ page.item }}" property="og:image">
 	{% elsif page.cover %}
 	<meta content="{{ site.url }}{{ site.baseurl }}/img{{ page.cover }}" property="og:image">
