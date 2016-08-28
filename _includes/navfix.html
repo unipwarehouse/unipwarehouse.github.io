@@ -1,9 +1,25 @@
 <!-- NAVBAR AFFIX -->
 <nav class="navbar-affix text-center">
-	<ul class="list-inline">
-		<li><a href="#services"><span class="icon-stars"></span> services</a></li>
-		<li><a href="#works"><span class="icon-work"></span> works</a></li>
-		<li><a href="#posts"><span class="icon-textsms"></span> posts</a></li>
+	<!-- logo -->
+	<h1 class="logo"><a href="{{ site.url }}">
+		<img src="{{ site.logo_small | prepend: site.baseurl }}" alt="{{ site.title }}">
+	</a></h1>
+
+	<!-- menu -->
+	<ul class="menu list-inline">
+	{% assign menu_pages = site.pages | sort: 'index' %}
+	{% for page in menu_pages limit 3 %}
+		{% if page.menu_title %}
+		<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.menu_title }}</a></li>
+		{% endif %}
+	{% endfor %}
+	</ul>
+
+	<!-- hook -->
+	<ul class="hook list-inline">
+		<li><a href="#services"><span class="icon-stars"></span> <span class="item">services</span></a></li>
+		<li><a href="#works"><span class="icon-work"></span> <span class="item">works</span></a></li>
+		<li><a href="#posts"><span class="icon-textsms"></span> <span class="item">posts</span></a></li>
 	</ul>
 </nav>
-<!-- /NAVBAR AFFIX -->
+<!-- /NAVBAR AFFIX
