@@ -8,13 +8,13 @@
 
 	<!-- Open Graph -->
 	{% if page.type == 'post' %}
-	<meta content="/img{{ page.cover }}" property="og:image">
+	<meta content="{{ site.url }}/img{{ page.cover }}" property="og:image">
 	{% elsif page.type == 'work' %}
-	<meta content="/img{{ page.item }}" property="og:image">
+	<meta content="{{ site.url }}/img{{ page.item }}" property="og:image">
 	{% elsif page.cover %}
-	<meta content="/img{{ page.cover }}" property="og:image">
+	<meta content="{{ site.url }}/img{{ page.cover }}" property="og:image">
 	{% else %}
-  <meta content="/img/logo-high-resolution.png" property="og:image">
+  <meta content="{{ site.url }}/img/logo-high-resolution.png" property="og:image">
 	{% endif %}
 	
 	<!-- CSS Reset -->
