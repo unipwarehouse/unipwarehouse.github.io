@@ -1,8 +1,8 @@
 ---
 title: Mina Zafarina
 categories: illustration
-item: /img/works/nana.jpg
-thumb: /img/works/nana.jpg
+item: /works/nana.jpg
+thumb: /works/nana.jpg
 tags: girls beauty cute hijab illustration digitalpainting
 ---
 Exercise for today.  
