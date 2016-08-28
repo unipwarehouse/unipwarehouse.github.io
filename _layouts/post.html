@@ -16,7 +16,7 @@ type: post
 				<a href="javascript:history.back()" class="button button-outline">BACK TO LIST</a>
 			</p>
 
-			{% if site.environment == 'production' %}
+			{% if jekyll.environment == 'production' %}
 				{% include disqus.html %}
 			{% endif %}
 		</div>
