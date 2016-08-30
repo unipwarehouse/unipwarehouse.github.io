@@ -1,5 +1,6 @@
 ---
 title: Mina Zafarina
+date: 2016-08-11
 categories: illustration
 item: /works/nana.jpg
 thumb: /works/nana.jpg

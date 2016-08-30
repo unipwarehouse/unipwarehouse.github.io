@@ -1,5 +1,6 @@
 ---
 title: Paskibraka 71
+date: 2016-08-17
 categories: illustration
 item: /works/paskibra-71.jpg
 thumb: /works/paskibra-71.jpg

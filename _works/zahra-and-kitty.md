@@ -1,5 +1,6 @@
 ---
 title: Zahra and Kitty
+date: 2015-11-09
 categories: illustration
 item: /works/zahra-and-kitty.jpg
 thumb: /works/zahra-and-kitty.jpg
