@@ -3,10 +3,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{% if page.menu_title == 'Home' %}{{ site.title }}{% else %}{{ page.title }}{% endif %} | {% if page.menu_title == 'Home' %}{{ site.payoff | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}</title>
-	<meta name="description" content="{% if page.menu_title == 'Home' %}{{ site.description | strip_newlines | strip_html }}{% elsif page.menu_title == 'Works' or page.menu_title == 'Blog' %}{{ page.payoff }}{% elsif page.type == 'work' or page.type == 'post' %}{{ page.content | truncate: 155 | strip_newlines | strip_html }}{% endif %}">
+	<meta name="description" content="{% if page.menu_title == 'Home' %}{{ site.description | strip_newlines | strip_html }}{% elsif page.menu_title == 'Works' or page.menu_title == 'Blog' %}{{ page.payoff }}{% elsif page.type == 'work' or page.type == 'post' %}{{ page.content | truncate: 155 | strip_newlines | strip_html }}{% endif %}" property="og:description">
 	<meta name="keyword" content="{% for tag in page.tags %}{{ tag | append: ', ' }}{% endfor %}">
 
 	<!-- Open Graph -->
+	<meta content="{{ page.url }}" property="og:url">
+	<meta content="{% if page.menu_title == 'Home' %}{{ site.title }}{% else %}{{ page.title }}{% endif %} | {% if page.menu_title == 'Home' %}{{ site.payoff | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}" property="og:title">
 	{% if page.menu_title %}
 	<meta content="{{ site.url }}{{ site.baseurl }}/img/logo-high-resolution.png" property="og:image">
 	{% elsif page.item %}
