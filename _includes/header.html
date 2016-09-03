@@ -8,10 +8,10 @@
 		</h1>
 
 		<ul class="list-inline float-right">
-		{% assign menu_pages = site.pages | sort: 'index' %}
-		{% for page in menu_pages limit 3 %}
-			{% if page.menu_title %}
-			<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.menu_title }}</a></li>
+		{% assign menu_pages = site.html_pages | sort: 'index' %}
+		{% for p in menu_pages limit 3 %}
+			{% if p.menu_title %}
+			<li{% if page.url == p.url %} class="active"{% endif %}><a href="{{ p.url | prepend: site.baseurl }}">{{ p.menu_title }}</a></li>
 			{% endif %}
 		{% endfor %}
 		</ul>
