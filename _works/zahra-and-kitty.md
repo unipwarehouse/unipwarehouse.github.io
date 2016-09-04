@@ -2,8 +2,8 @@
 title: Zahra and Kitty
 date: 2015-11-09
 categories: illustration
-item: /works/zahra-and-kitty.jpg
-thumb: /works/zahra-and-kitty.jpg
+item: /works/zahra-and-kitty/zahra-and-kitty.jpg
+thumb: /works/zahra-and-kitty/zahra-and-kitty.jpg
 tags: girls kids cute hijab illustration vector
 ---
 An illustration for kids t-shirt
