@@ -1,4 +1,4 @@
-<header id="home"{% if page.cover %} style="background-image: url('{{ site.baseurl }}/img{{ page.cover }}');"{% endif %}>
+<header id="home"{% if page.cover %} style="background-image: url('{{ site.baseurl }}/img{{ page.cover }}');{% endif %}{% if page.menu_title == 'Home' %}background-size: contain;{% endif %}">
 	<nav class="topnav clearfix">
 		<h1 class="float-left">
 			<a href="{{ site.url | append: site.baseurl }}">
@@ -17,7 +17,7 @@
 		</ul>
 	</nav>
 
-	<div class="caption text-center">
+	<div class="{% if page.menu_title == 'Home' %}frontpage{% else %}caption text-center{% endif %}">
 		{% if page.type == 'post' %}
 		<div class="container">
 		{% endif %}
