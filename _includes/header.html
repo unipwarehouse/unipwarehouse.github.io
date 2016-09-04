@@ -31,7 +31,7 @@
 
 			{% if page.type == 'post' %}
 				<p data-aos="fade-up" data-aos-delay="800">
-					In <a href="{{ site.baseurl }}/posts/{{ page.categories }}/">{{ page.categories }}</a>&emsp;-&emsp;{{ page.date | timeago | date_to_string }}
+					In <a href="{{ site.baseurl }}/posts/{{ page.categories }}/">{{ page.categories }}</a> - {{ page.date | timeago | date_to_string }}
 				</p>
 			{% endif %}
 
