@@ -20,6 +20,8 @@ body#work
 		.caption
 			margin-top: 150px
 			text-shadow: none
+			@media #{$mobile}
+				margin-top: 70px
 
 			h2
 				color: $color-primary
@@ -46,7 +48,7 @@ body#work
 			display: inline-block
 			
 		img
-			margin: 3rem 0
+			margin: 0 0 2rem
 			max-width: 100%
 			max-height: 600px
 			border-radius: $border-radius
