@@ -27,7 +27,6 @@ header
 	color: #fff
 	height: 100vh
 	background-color: $color-primary
-	background-attachment: fixed
 	background-size: cover
 	background-position: right bottom
 	background-repeat: no-repeat
@@ -104,9 +103,12 @@ header
 			@media (max-width: 320px)
 				font-size: 2rem
 
+		@media #{$mobile}
+			br
+				display: none
+
 	.caption
 		padding: 0 15px
-		margin: auto
 
 		h2
 			font-size: 8rem
@@ -126,6 +128,7 @@ header
 #content
 	background-attachment: fixed
 	position: relative
+	padding-top: 30px
 
 	nav.navbar-affix
 		color: $color-primary
@@ -213,7 +216,7 @@ header
 			color: $color-accent !important
 
 	section
-		padding: 80px 0
+		padding: 50px 0
 
 		&#service .accent
 			background-color: $color-accent

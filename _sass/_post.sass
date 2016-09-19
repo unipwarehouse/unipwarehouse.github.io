@@ -16,6 +16,7 @@ body#post
 	header
 		min-height: 100vh
 		background-position: center center
+		background-attachment: fixed
 		position: relative
 		z-index: 4
 		.caption
@@ -31,6 +32,8 @@ body#post
 					font-size: 3rem
 			p
 				margin-bottom: auto
+				@media #{$mobile}
+					font-size: 1.6rem
 
 				a:hover
 					color: $color-accent
@@ -44,6 +47,7 @@ body#post
 				color: darken($color-grey, 40%)
 				font-family: 'Exo 2', sans-serif
 				font-size: 1.8em
+				line-height: 1.6
 				@media #{$mobile}
 					font-size: 2rem
 				&:first-letter
@@ -56,6 +60,9 @@ body#post
 
 			p
 				font-size: 18px
+				line-height: 2
+				@media #{$mobile}
+					font-size: 1.6rem
 
 			ul
 				list-style-position: outside
