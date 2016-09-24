@@ -251,10 +251,41 @@ header
 	h2
 		@extend .text-center
 
+	#social-media
+		min-height: 300px
+		background-color: $color-grey
+
+
 footer
 	padding: $gutter 0
 	color: #fff
 	background-color: $color-primary
+	
+	#contact-form
+		margin: $gutter 0
+
+
+		input, textarea
+			background-color: rgba(0,0,0,0.1)
+			border: none
+			@extend .ease
+		input::placeholder, textarea::placeholder
+			color: rgba(255,255,255,0.5)
+
+		input:focus, textarea:focus
+			background-color: rgba(255,255,255,1)
+			color: #606c76
+		input:focus::placeholder, textarea:focus::placeholder
+			color: lighten(#606c76, 30%)
+
+		.submit
+			background-color: $color-accent
+			color: rgba(0,0,0,.3)
+			&:hover
+				background-color: lighten($color-accent, 10%)
+			@media #{$mobile}
+				width: 100%
+
 
 	.typeform
 		margin-bottom: $gutter
