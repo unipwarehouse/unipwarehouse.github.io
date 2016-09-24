@@ -19,7 +19,8 @@
 					</div>
 					<div class="column post-body text-left">
 						<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-						{{ post.content | truncatewords: 30 | strip_newlines }}
+						{% comment %}{{ post.content | truncatewords: 30 | strip_newlines }}{% endcomment %}
+						{{ post.excerpt }}
 					</div>
 				</div>
 			</div>
