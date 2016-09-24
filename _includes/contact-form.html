@@ -1,0 +1,27 @@
+<section id="contact-form">
+	<div class="container text-center">
+		<div class="row">
+			<div class="column" data-aos="fade-up">
+				<h2 class="text-center">Get In Touch</h2>
+				<div class="accent white"></div>
+
+				<p>There's nothing better than a message from a complete stranger. It's an opportunity to get to know someone and make a new friend.</p>
+
+				<form action="{% if jekyll.environtment == 'production' %}https://formspree.io/abdurrahman.alhanif@gmail.com{% endif %}" method="POST">
+					<div class="row">
+						<div class="column">
+							<input type="text" name="name" placeholder="Your name">
+						</div>
+						<div class="column">
+							<input type="email" name="email" placeholder="Your email">
+						</div>
+					</div>
+
+					<textarea name="message" placeholder="Okay, type your message..."></textarea>
+					<!-- <input type="submit" value="Send"> -->
+					<button class="button submit" type="submit">Send Message</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
