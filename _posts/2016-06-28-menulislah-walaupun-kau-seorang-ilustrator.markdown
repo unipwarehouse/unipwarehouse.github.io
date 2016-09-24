@@ -5,7 +5,7 @@ tags: copywriting illustrator harusmenulis
 cover: /posts/bokmal.com.ua-beatrice-alemagna.jpg
 cover_credit: bokmal.com.ua
 ---
-Beberapa kali belakangan ini saya sering dapat email dari [Medium][medium]. Isinya tentang *daily-diggest*nya yang berisi artikel-artikel menarik dan berkualitas dari member Medium di berbagai penjuru dunia. Dan dari sini saya mulai mengerti betapa pentingnya menulis ~~dan menyesal meng*uninstall* aplikasi Medium beberapa waktu lalu~~.
+Beberapa kali belakangan ini saya sering dapat email dari [Medium][medium]. Isinya tentang *daily-diggest*nya yang berisi artikel-artikel menarik dan berkualitas dari member Medium di berbagai penjuru dunia. Dan dari sini saya mulai mengerti betapa pentingnya menulis.
 
 Sekitar dua bulan lalu saya mencoba mendaftarkan akun Medium, sebuah platform *open publishing*, yaitu semua member yang ada dapat menulis ide mereka dan mempublishnya secara independen yang kemudian dapat di*share* dengan teman, kolega, dll. Tidak hanya itu, Medium menyuguhkan fitur tambahan yang mana pembaca dapat mengutip dan menandai sebagian teks dari artikel tersebut untuk kemudian kutipan itu (atau lebih populer dengan *quote*) dapat dengan mudahnya dibaca dan dikomentari oleh orang lain. Walaupun terlihat sepele, bagi para penulis buku, atau yang suka mengutip kata-kata bijak akan sangat terbantu dengan fitur ini karena kita dapat secara langsung mengetahui dari literatur mana kutipan itu berasal, tidak hanya berupa sepenggal kutipan teks saja. Fitur ini juga yang membuat saya tertarik dengan platform yang satu ini dan mencoba untuk menulis *geje*.
 
