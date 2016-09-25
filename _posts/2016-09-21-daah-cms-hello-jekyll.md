@@ -2,6 +2,7 @@
 title: Daah CMS, Hello Jekyll!
 date: 2016-06-19
 categories: misc
+tags: cms wordpress jekyll static-site github github-pages
 ---
 Selama beberapa tahun mengenal dunia web development dan pembangunan website, saya hanya mencoba menggunakan *Content Maganement System* atau CMS untuk membangun website. Tapi sekarang saya beralih ke Jekyll.
 
@@ -21,17 +22,21 @@ Jekyll dikembangkan oleh penyedia hosting berbasis git, [Github](http://github.c
 
 {% include post-image.html image-link="https://jekyll.github.io/brand/jekyll-logo-light-solid.png" image-alt="Jekyll" %}
 
-Lalu bagaimana dengan masalah pribadi saya soal jaringan internet tadi? Tenang. Jekyll mengharuskan kita menginstall tool untuk keperluan development/ pengembangan website. Dengan tool ini Jekyll akan mengolah file yang ada di folder tertentu untuk dirender menjadi struktur website kita, walaupun hanya satu file `index.html` saja! Artinya, di manapun lokasi drive kita membuat projek website, entah di `C:`, di `D:` bagi pengguna Windows, atau di `Home`, di subfolder dll, kita tetap bisa membangunnya hanya dengan mengetik *command line* `jekyll new nama_projek` dan `enter`. Kalau saya pribadi, biasanya saya mulai dengan membuat template `html`nya yang sebelumnya sudah saya desain dulu. Lalu jika saya rasa desain sudah ok, tanpa perlu basa-basi saya ketik `jekyll serve` pada terminal atau command prompt jika di Windows, dan `enter`. Jekyll akan men-*generate* file-file yang ada di satu folder projek tadi menjadi struktur website berdasarkan `URL`nya dan disediakan di `127.0.0.1:4000` atau biasa kita ketik dengan `localhost:4000`. Seketika hasil kerja kita dalam membangun website dapat kita lihat secara lokal dan **offline** tanpa ribet memikirkan masalah PHP MySQL, dst.
+Lalu bagaimana dengan masalah pribadi saya soal jaringan internet tadi? Tenang. Jekyll mengharuskan kita menginstall tool untuk keperluan development/ pengembangan website. Dengan tool ini Jekyll akan mengolah file yang ada di folder tertentu untuk dirender menjadi struktur website kita, walaupun hanya satu file `index.html` saja! Artinya, di manapun lokasi drive kita membuat projek website, entah di `C:`, di `D:` bagi pengguna Windows, atau di `Home`, di subfolder dll, kita tetap bisa membangunnya hanya dengan mengetik *command line* `jekyll new nama_projek` dan `enter`. Kalau saya pribadi, biasanya saya mulai dengan membuat template `html`nya yang sebelumnya sudah saya desain dulu. Lalu jika saya rasa desain sudah ok, tanpa perlu basa-basi saya ketik `jekyll serve` pada terminal atau command prompt jika di Windows, dan `enter`. Jekyll akan men-*generate* file-file yang ada di satu folder projek tadi menjadi struktur website berdasarkan `URL`nya dan disediakan di `127.0.0.1:4000` atau biasa kita ketik dengan `localhost:4000`. Seketika hasil kerja saya dalam membangun website dapat saya lihat secara lokal dan **offline** tanpa ribet memikirkan masalah PHP MySQL, dst.
 
-Bahkan jika perlu, kita bisa sewaktu-waktu memindahkan folder projek tadi di lokasi mana saja dan menjalankannya dimanapun komputer yang terinstall tool Jekyll, tidak seperti CMS yang harus berada di lokasi tertentu.
+Bahkan jika perlu, saya bisa sewaktu-waktu memindahkan folder projek tadi di lokasi mana saja dan menjalankannya dimanapun komputer yang terinstall tool Jekyll, tidak seperti CMS yang harus berada di lokasi tertentu. Jadi, memang benar-benar sangat fleksibel!
 
-Saya juga menggunakan program version control [Git](http://git-scm.com), untuk mengelola perubahan dan versioning website saya agar lebih mudah. Yang lebih penting lagi, jika terjadi kesalahan selama proses development website, saya bisa mengembalikannya ke keadaan sebelum terjadi kesalahan. Ini sama seperti fungsi *undo* dan *redo* dalam setiap program pengolah data, hanya saja lebih kompleks.
+Saya juga menggunakan program version control [Git](http://git-scm.com), untuk mengelola perubahan dan versioning website saya agar lebih mudah. Yang lebih penting lagi, jika terjadi kesalahan selama proses development website, saya bisa mengembalikannya ke keadaan sebelum terjadi kesalahan. Ini sama seperti fungsi *undo* dan *redo* dalam setiap program pengolah file, hanya saja yang dikelola tidak hanya satu file saja, tapi satu projek!
 
 ### Tools
 
 Tools yang diperlukan mulai dari pengembangan website sampai dengan publishing atau produksi hanya terminal atau command prompt dan program teks editor saja, seperti Notepad, Notepad++, Textmate, Atom, Bracket, dan saya pribadi menggunakan Sublime Text.
 
-Dalam publishing, teman-teman tidak usah pusing dengan format penulisan karena Jekyll mendukung konten dengan format `markdown` dan `textile` (dengan plugin) yang sangat mudah untuk dipelajari.
+Dalam publishing, saya tidak usah pusing dengan format penulisan karena Jekyll mendukung konten dengan format `markdown` dan `textile` (dengan plugin) yang sangat mudah untuk dipelajari.
+
+Soal web development, Jekyll menggunakan bahasa templating [Liquid](https://shopify.github.io/liquid/) yang penggunaannya dapat saya kuasai dengan hanya beberapa kali latihan membuat suatu blok kode.
+
+Jadi, dengan hanya berbekal teks editor tadi, saya bisa menulis artikel sekaligus mengedit template website saya. Begitu saya rasa sudah cukup, saya berganti ke terminal dan `bundle exec jekyll serve` dan buka `localhost:4000` di browser. Jika sudah puas dengan hasilnya, tinggal `git push` saja. Praktis!
 
 ### Hosting
 
@@ -41,7 +46,7 @@ Tapi kalau teman-teman ingin menggunakan hosting seperti pada umumnya juga bisa,
 
 ### Langkah Selanjutnya
 
-Selanjutnya, teman-teman bisa langsung mencoba menggunakan Jekyll dengan beberapa perintah saja. Ingat, komputer harus [memenuhi kebutuhan](https://jekyllrb.com/docs/installation/#requirements) agar proses berjalan dengan lancar.
+Selanjutnya, Bagi teman-teman yang penasaran bisa langsung mencoba menggunakan Jekyll dengan beberapa perintah saja. Ingat, komputer harus [memenuhi kebutuhan](https://jekyllrb.com/docs/installation/#requirements) agar proses berjalan dengan lancar.
 
 {% highlight shell %}
 ~ $ gem install jekyll bundler
@@ -56,13 +61,20 @@ Atau kunjungi [dokumentasi Jekyll](http://jekyllrb.com/docs/home/) untuk belajar
 
 Banyak yang masih bisa dilakukan dengan Jekyll terlebih lagi karena Jekyll sendiri adalah program opensource yang artinya dapat dikembangkan oleh semua orang tanpa khawatir soal lisensi. Ada beberapa hal yang mungkin bisa dilakukan untuk lebih membuat website Jekyll terlihat lebih dinamis, seperti:
 
-- Menambah `contenttype` (istilah jenis konten selain artikel)
+- Menambah `collection` (istilah jenis konten selain artikel)
 - Memasang plugin Disqus untuk form komentar dan menambah comment counter
 - Menambah fungsi unlimited scroll dengan AJAX
 - Menginstall plugin Jekyll Admin untuk merasakan tampilan Dashboard seperti CMS pada umumnya
 - Export konten dari CMS lama seperti Wordpress, ke Jekyll
 - Menggunakan custom domain untuk website Github Pages kita
 
+Untuk memperluas pengetahuan tentang Jekyll, biasanya saya membuka beberapa referensi berikut dan semoga juga bisa bermanfaat untuk teman-teman sekalian.
+
+- [jekyllrb.com](http://jekyllrb.com/) - fundamental Jekyll
+- [jekyll.tips](http://jekyll.tips/) - tips trik seputar pengembangan website Jekyll
+- [jekyllthemes.io](https://jekyllthemes.io/) - kumpulan theme jekyll free dan premium
+- *Monggo teman-teman jika ada referensi lain yang mungkin bermanfaat bisa ditambah di komentar...*
+
 ### Kesimpulan
 
-Ini hanya tulisan saya sebagai pengguna Jekyll sekaligus testimonial. Intinya saya cukup puas dengan tool Jekyll untuk kebutuhan publishing dan pengembangan website saya. Yang saya inginkan adalah CMS yang fleksibel, minim syarat, dan cukup mudah digunakan. Soal kekurangan pasti ada, tapi seiring dengan waktu para pengembang Jekyll menambahkan fitur-fitur baru yang sangat membantu dalam mengembangkan website menjadi kaya akan konten yang bervariasi. Yang penting saya bisa fokus dengan konten saya tanpa khawatir dengan bermacam-macam keperluan server website convensional.
+Ini hanya tulisan saya sebagai pengguna Jekyll sekaligus testimonial. Intinya saya cukup puas dengan tool Jekyll untuk kebutuhan publishing dan pengembangan website. Yang saya inginkan adalah CMS yang fleksibel, minim syarat, dan cukup mudah digunakan. Dengan Jekyll saya dapat membangun website ini. Soal kekurangan pasti ada tapi seiring dengan waktu, para pengembang Jekyll menambahkan fitur-fitur baru yang sangat membantu dalam mengembangkan website menjadi kaya akan konten yang bervariasi. Yang penting saya bisa fokus dengan konten saya tanpa khawatir dengan bermacam-macam keperluan server website pada umumnya.
