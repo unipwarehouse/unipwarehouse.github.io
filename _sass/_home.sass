@@ -1,357 +1,376 @@
 html, body
-	margin: 0
-	padding: 0
-	position: relative
-	font-family: 'Open Sans', sans-serif
+  margin: 0
+  padding: 0
+  position: relative
+  font-family: 'Open Sans', sans-serif
 
 h1, h2, h3, h4, h5, h6
-	font-family: 'Exo 2', sans-serif
+  font-family: 'Exo 2', sans-serif
 
 h1, h2
-	font-weight: 400
+  font-weight: 400
 
 h3, h4, h5, h6
-	font-weight: 200
+  font-weight: 200
 
 a
-	@extend .ease
+  @extend .ease
 
 .container
-	max-width: 90rem
+  max-width: 90rem
 
 .column
-	@media #{$mobile}
-		max-width: 100% !important
+  @media #{$mobile}
+    max-width: 100% !important
 
 header
-	color: #fff
-	height: 100vh
-	background-color: $color-primary
-	background-size: cover
-	background-position: right bottom
-	background-repeat: no-repeat
-	position: relative
-	z-index: 3
-	display: flex
+  color: #fff
+  height: 100vh
+  background-color: $color-primary
+  background-size: cover
+  background-position: right bottom
+  background-repeat: no-repeat
+  position: relative
+  z-index: 3
+  display: flex
 
-	nav.topnav
-		width: 100%
-		position: absolute
-		top: 0
-		left: 0
-		margin-bottom: -5px
+  nav.topnav
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    margin-bottom: -5px
 
-		h1, ul, li
-			margin-bottom: 0
+    h1, ul, li
+      margin-bottom: 0
 
-		a.logo
-			display: block
+    a.logo
+      display: block
 
-		h1
-			font-size: inherit
+    h1
+      font-size: inherit
 
-			img
-				width: 170px
-				margin: 15px 15px 0
+      img
+        width: 170px
+        margin: 15px 15px 0
 
-				&.logo-lg
-					@media #{$mobile}
-						display: none
+        &.logo-lg
+          @media #{$mobile}
+            display: none
 
-				&.logo-sm
-					width: 34px
-					display: none
-					@media #{$mobile}
-						width: auto
-						height: 30px
-						display: inline
-						margin: 10px 10px 0
+        &.logo-sm
+          width: 34px
+          display: none
+          @media #{$mobile}
+            width: auto
+            height: 30px
+            display: inline
+            margin: 10px 10px 0
 
-		a
-			color: #fff
-			padding-right: 15px
-			line-height: 60px
-			font-weight: 600
-			@media #{$mobile}
-				line-height: 50px
-			&:hover
-				color: $color-accent
-		
-		.active a
-			color: $color-accent
+    a
+      color: #fff
+      padding-right: 15px
+      line-height: 60px
+      font-weight: 600
+      @media #{$mobile}
+        line-height: 50px
+      &:hover
+        color: $color-accent
+    
+    .active a
+      color: $color-accent
 
-	.frontpage
-		position: absolute
-		top: 0
-		left: 0
-		max-width: 400px
-		margin: 80px 40px 0
-		@media (max-width: 320px)
-			max-width: 100%
-			margin: 50px 0 0
-			padding: 0 15px
+  .frontpage
+    position: absolute
+    top: 0
+    left: 0
+    max-width: 400px
+    margin: 80px 40px 0
+    @media (max-width: 320px)
+      max-width: 100%
+      margin: 50px 0 0
+      padding: 0 15px
 
-		h2
-			text-align: left !important
-			font-size: 12rem
-			font-weight: 600
-			@media #{$mobile}
-				font-size: 8rem
+    h2
+      text-align: left !important
+      font-size: 12rem
+      font-weight: 600
+      @media #{$mobile}
+        font-size: 8rem
 
-		p
-			font-size: $font-medium
-			@media (max-width: 320px)
-				font-size: 2rem
+    p
+      font-size: $font-medium
+      @media (max-width: 320px)
+        font-size: 2rem
 
-		@media #{$mobile}
-			br
-				display: none
+    @media #{$mobile}
+      br
+        display: none
 
-	.caption
-		padding: 0 15px
+  .caption
+    padding: 0 15px
 
-		h2
-			font-size: 8rem
-			font-weight: 600
-			@media #{$mobile}
-				font-size: 5rem
+    h2
+      font-size: 8rem
+      font-weight: 600
+      @media #{$mobile}
+        font-size: 5rem
 
-		p
-			font-size: $font-medium
+    p
+      font-size: $font-medium
 
-	a.direction
-		color: inherit
-		font-size: 5rem
-		&:hover
-			color: $color-accent
+  a.direction
+    color: inherit
+    font-size: 5rem
+    &:hover
+      color: $color-accent
 
 #content
-	background-attachment: fixed
-	position: relative
-	padding: 30px 0
+  background-attachment: fixed
+  position: relative
+  padding: 30px 0
 
-	nav.navbar-affix
-		color: $color-primary
-		width: 100%
-		line-height: $navfix-height
-		background-color: #fff
-		position: absolute
-		z-index: 5
-		top: $navfix-height - ($navfix-height*2)
-		left: 0
-		@extend .ease
-		@media #{$mobile}
-			display: none
-			line-height: $navfix-height-sm
-			top: $navfix-height-sm - ($navfix-height-sm*2)
+  nav.navbar-affix
+    color: $color-primary
+    width: 100%
+    line-height: $navfix-height
+    background-color: #fff
+    position: absolute
+    z-index: 5
+    top: $navfix-height - ($navfix-height*2)
+    left: 0
+    @extend .ease
+    @media #{$mobile}
+      display: none
+      line-height: $navfix-height-sm
+      top: $navfix-height-sm - ($navfix-height-sm*2)
 
-		h1, ul, li
-			margin-bottom: 0
-		
-		h1.logo
-			display: none
+    h1, ul, li
+      margin-bottom: 0
+    
+    h1.logo
+      display: none
 
-		ul.hook
-			margin: 0 auto
-			li
-				margin-bottom: 0
-				a
-					color: inherit
-					padding: 0 10px
-					vertical-align: middle
-					display: block
-					&:hover
-						color: $color-accent
-			@media #{$mobile}
-				display: none
+    ul.hook
+      margin: 0 auto
+      li
+        margin-bottom: 0
+        a
+          color: inherit
+          padding: 0 10px
+          vertical-align: middle
+          display: block
+          &:hover
+            color: $color-accent
+      @media #{$mobile}
+        display: none
 
-		ul.menu
-			display: none
+    ul.menu
+      display: none
 
-	nav.navbar-affix-scrolled
-		color: white
-		width: 100%
-		background-color: $color-primary
-		position: fixed
-		top: 0
-		// -webkit-box-shadow: 0 3px 3px rgba(0,0,0,.3)
-		// -moz-box-shadow: 0 3px 3px rgba(0,0,0,.3)
-		// box-shadow: 0 3px 3px rgba(0,0,0,.3)
-		@media #{$mobile}
-			display: block
+  nav.navbar-affix-scrolled
+    color: white
+    width: 100%
+    background-color: $color-primary
+    position: fixed
+    top: 0
+    // -webkit-box-shadow: 0 3px 3px rgba(0,0,0,.3)
+    // -moz-box-shadow: 0 3px 3px rgba(0,0,0,.3)
+    // box-shadow: 0 3px 3px rgba(0,0,0,.3)
+    @media #{$mobile}
+      display: block
 
-		h1.logo
-			display: block
-			float: left
-			margin-left: 10px
-			a
-				display: block
-				img
-					width: 34px
-					padding-bottom: 5px
-					@media #{$mobile}
-						height: 30px
+    h1.logo
+      display: block
+      float: left
+      margin-left: 10px
+      a
+        display: block
+        img
+          width: 34px
+          padding-bottom: 5px
+          @media #{$mobile}
+            height: 30px
 
-		ul.hook
-			float: right
-			@media #{$mobile}
-				display: none
-			li a span.item
-				display: none
+    ul.hook
+      float: right
+      @media #{$mobile}
+        display: none
+      li a span.item
+        display: none
 
-		ul.menu
-			margin-left: 15px
-			display: inline
-			float: right
-			@media #{$mobile}
-				line-height: 48px
-			li a
-				color: white
-				padding-right: 15px
-				font-weight: 600
-				&:hover
-					color: $color-accent
+    ul.menu
+      margin-left: 15px
+      display: inline
+      float: right
+      @media #{$mobile}
+        line-height: 48px
+      li a
+        color: white
+        padding-right: 15px
+        font-weight: 600
+        &:hover
+          color: $color-accent
 
-		.active a
-			color: $color-accent !important
+    .active a
+      color: $color-accent !important
 
-	section
-		padding: 50px 0
+  section
+    padding: 50px 0
 
-		&#service .accent
-			background-color: $color-accent
+    &#service .accent
+      background-color: $color-accent
 
-		&#works
-			.accent
-				background-color: $color-primary
+    &#works
+      .accent
+        background-color: $color-primary
 
-			.button
-				margin-top: 3rem
+      .button
+        margin-top: 3rem
 
-		.works-item
-			margin: 10px 0
-			&:first-child
-				margin-left: 0
-			&:last-child
-				margin-right: 0
-			a
-				height: 200px
-				background-color: $color-primary
-				display: block
-				overflow: hidden
-				border-radius: $border-radius
-				border: 1px solid $color-grey
+    .works-item
+      margin: 10px 0
+      &:first-child
+        margin-left: 0
+      &:last-child
+        margin-right: 0
+      a
+        height: 200px
+        background-color: $color-primary
+        display: block
+        overflow: hidden
+        border-radius: $border-radius
+        border: 1px solid $color-grey
 
-				img
-					width: 100%
-					height: 100%
-					object-fit: cover
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
 
 
-	h2
-		@extend .text-center
+  h2
+    @extend .text-center
 
-	#social-media
-		min-height: 300px
-		background-color: $color-grey
+  #social-media
+    min-height: 300px
+    background-color: $color-grey
 
 
 footer
-	padding: $gutter 0
-	color: #fff
-	background-color: $color-primary
-	
-	#contact-form
-		margin: $gutter 0
+  padding: $gutter 0
+  color: #fff
+  background-color: $color-primary
+  
+  #contact-form
+    margin: $gutter 0
+
+    input, textarea
+      background-color: rgba(0,0,0,0.1)
+      border: none
+      @extend .ease
+
+    input:focus, textarea:focus
+      background-color: rgba(255,255,255,1)
+      color: #606c76
+
+    input::-webkit-input-placeholder, /* WebKit, Blink, Edge */
+    textarea::-webkit-input-placeholder /* WebKit, Blink, Edge */
+      color: rgba(255,255,255,0.5)
+    
+    input:-moz-placeholder, /* Mozilla Firefox 4 to 18 */
+    textarea:-moz-placeholder /* Mozilla Firefox 4 to 18 */
+      color:    rgba(255,255,255,0.5)
+      opacity:  1
+    
+    input::-moz-placeholder, /* Mozilla Firefox 19+ */
+    textarea::-moz-placeholder /* Mozilla Firefox 19+ */
+      color:    rgba(255,255,255,0.5)
+      opacity:  1
+    
+    input:-ms-input-placeholder, /* Internet Explorer 10-11 */
+    textarea:-ms-input-placeholder /* Internet Explorer 10-11 */
+      color:    rgba(255,255,255,0.5)
+
+    input:focus::-webkit-input-placeholder, /* WebKit, Blink, Edge */
+    textarea:focus::-webkit-input-placeholder /* WebKit, Blink, Edge */
+      color:    lighten(#606c76, 30%)
+    
+    input:focus:-moz-placeholder, /* Mozilla Firefox 4 to 18 */
+    textarea:focus:-moz-placeholder /* Mozilla Firefox 4 to 18 */
+      color:    lighten(#606c76, 30%)
+      opacity:  1
+    
+    input:focus::-moz-placeholder, /* Mozilla Firefox 19+ */
+    textarea:focus::-moz-placeholder /* Mozilla Firefox 19+ */
+      color:    lighten(#606c76, 30%)
+      opacity:  1
+    
+    input:focus:-ms-input-placeholder, /* Internet Explorer 10-11 */
+    textarea:focus:-ms-input-placeholder /* Internet Explorer 10-11 */
+      color:    lighten(#606c76, 30%)
+    
+    .submit
+      background-color: $color-accent
+      color: rgba(0,0,0,.3)
+      &:hover
+        background-color: lighten($color-accent, 10%)
+      @media #{$mobile}
+        width: 100%
 
 
-		input, textarea
-			background-color: rgba(0,0,0,0.1)
-			border: none
-			@extend .ease
-		input::placeholder, textarea::placeholder
-			color: rgba(255,255,255,0.5)
+  .typeform
+    margin-bottom: $gutter
+    overflow: hidden
 
-		input:focus, textarea:focus
-			background-color: rgba(255,255,255,1)
-			color: #606c76
-		input:focus::placeholder, textarea:focus::placeholder
-			color: lighten(#606c76, 30%)
+  .footer-caption
+    .footer-logo img
+      width: 280px
 
-		.submit
-			background-color: $color-accent
-			color: rgba(0,0,0,.3)
-			&:hover
-				background-color: lighten($color-accent, 10%)
-			@media #{$mobile}
-				width: 100%
+    a
+      color: white
+      font-weight: 600
+      &:hover
+        color: $color-accent
 
+    ul li a
+      margin-right: 5px
 
-	.typeform
-		margin-bottom: $gutter
-		overflow: hidden
+    .footer-note span
+      color: $color-accent
 
-	.footer-caption
-		.footer-logo img
-			width: 280px
+    @media #{$mobile}
+      .footer-logo, .footer-note
+        text-align: center
+        margin: 0 !important
 
-		a
-			color: white
-			font-weight: 600
-			&:hover
-				color: $color-accent
-
-		ul li a
-			margin-right: 5px
-
-		.footer-note span
-			color: $color-accent
-
-		@media #{$mobile}
-			.footer-logo, .footer-note
-				text-align: center
-				margin: 0 !important
-
-			.footer-logo img
-				width: 200px
-
-	.social
-		a:hover
-			color: inherit
-	.facebook
-		padding: 5px 8px
-		margin-bottom: 10px
-		font-size: 1.2rem
-		background-color: rgb(59, 89, 152)
-		color: white
-		display: inline-block
-		border-radius: $border-radius
+      .footer-logo img
+        width: 200px
 
 .scroll-top
-	width: 50px
-	line-height: 50px
-	margin: 0 20px 20px 0
-	text-align: center
-	color: $color-primary
-	background-color: white
-	display: block
-	border-radius: 50%
-	position: fixed
-	bottom: 0
-	right: 0
-	z-index: 2
-	&:hover
-		color: white
-		background-color: $color-accent
+  width: 50px
+  line-height: 50px
+  margin: 0 20px 20px 0
+  text-align: center
+  color: $color-primary
+  background-color: white
+  display: block
+  border-radius: 50%
+  position: fixed
+  bottom: 0
+  right: 0
+  z-index: 2
+  &:hover
+    color: white
+    background-color: $color-accent
 
-	p
-		display: none
+  p
+    display: none
 
 
-	@media #{$mobile}
-		width: 100%
-		margin: 0
-		border-radius: 0
+  @media #{$mobile}
+    width: 100%
+    margin: 0
+    border-radius: 0
 
-		p
-			display: inline
+    p
+      display: inline
