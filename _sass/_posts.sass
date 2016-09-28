@@ -32,6 +32,9 @@ body#posts
 			-webkit-filter: saturate(0)
 			filter: saturate(0)
 			@extend .ease
+
+	.post-body br
+		display: none
 			
 	@media #{$mobile}
 		text-align: center
@@ -44,6 +47,9 @@ body#posts
 
 		.post-body
 			text-align: center
+			
+			br
+				display: inline
 
 	&:hover a.thumb img
 		-webkit-filter: saturate(100%)

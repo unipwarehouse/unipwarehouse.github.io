@@ -39,46 +39,49 @@ header
     position: absolute
     top: 0
     left: 0
-    margin-bottom: -5px
 
     h1, ul, li
       margin-bottom: 0
 
-    a.logo
-      display: block
-
-    h1
-      font-size: inherit
-
-      img
-        width: 170px
-        margin: 15px 15px 0
-
-        &.logo-lg
-          @media #{$mobile}
-            display: none
-
-        &.logo-sm
-          width: 34px
-          display: none
-          @media #{$mobile}
-            width: auto
-            height: 30px
-            display: inline
-            margin: 10px 10px 0
-
     a
       color: #fff
       padding-right: 15px
-      line-height: 60px
       font-weight: 600
-      @media #{$mobile}
-        line-height: 50px
       &:hover
         color: $color-accent
-    
+
     .active a
       color: $color-accent
+
+    h1
+      font-size: inherit
+      margin-left: 15px
+
+      a.logo
+        display: block
+
+        img
+          width: 170px
+          vertical-align: middle
+          
+          &.logo-lg
+            @media #{$mobile}
+              display: none
+
+          &.logo-sm
+            width: 34px
+            display: none
+            @media #{$mobile}
+              width: auto
+              height: 30px
+              display: inline
+              position: relative
+              top: -3px
+    
+    a.logo, .menu-top a
+      line-height: 60px
+      @media #{$mobile}
+        line-height: 50px
 
   .frontpage
     position: absolute
@@ -260,7 +263,9 @@ footer
   padding: $gutter 0
   color: #fff
   background-color: $color-primary
-  
+
+  // Contact form
+
   #contact-form
     margin: $gutter 0
 
@@ -272,46 +277,40 @@ footer
     input:focus, textarea:focus
       background-color: rgba(255,255,255,1)
       color: #606c76
-
-    input::-webkit-input-placeholder, /* WebKit, Blink, Edge */
-    textarea::-webkit-input-placeholder /* WebKit, Blink, Edge */
+    
+    /* WebKit, Blink, Edge */
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder
       color: rgba(255,255,255,0.5)
+    input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder 
+      color:    lighten(#606c76, 30%)
     
-    input:-moz-placeholder, /* Mozilla Firefox 4 to 18 */
-    textarea:-moz-placeholder /* Mozilla Firefox 4 to 18 */
+    /* Mozilla Firefox 4 to 18 */
+    input:-moz-placeholder, textarea:-moz-placeholder 
       color:    rgba(255,255,255,0.5)
       opacity:  1
-    
-    input::-moz-placeholder, /* Mozilla Firefox 19+ */
-    textarea::-moz-placeholder /* Mozilla Firefox 19+ */
-      color:    rgba(255,255,255,0.5)
+    input:focus:-moz-placeholder, textarea:focus:-moz-placeholder 
+      color:    lighten(#606c76, 30%)
       opacity:  1
     
-    input:-ms-input-placeholder, /* Internet Explorer 10-11 */
-    textarea:-ms-input-placeholder /* Internet Explorer 10-11 */
+    /* Mozilla Firefox 19+ */
+    input::-moz-placeholder, textarea::-moz-placeholder 
       color:    rgba(255,255,255,0.5)
+      opacity:  1
+    input:focus::-moz-placeholder, textarea:focus::-moz-placeholder 
+      color:    lighten(#606c76, 30%)
+      opacity:  1
+    
+    /* Internet Explorer 10-11 */
+    input:-ms-input-placeholder, textarea:-ms-input-placeholder 
+      color:    rgba(255,255,255,0.5)
+    input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder 
+      color:    lighten(#606c76, 30%)
 
-    input:focus::-webkit-input-placeholder, /* WebKit, Blink, Edge */
-    textarea:focus::-webkit-input-placeholder /* WebKit, Blink, Edge */
-      color:    lighten(#606c76, 30%)
-    
-    input:focus:-moz-placeholder, /* Mozilla Firefox 4 to 18 */
-    textarea:focus:-moz-placeholder /* Mozilla Firefox 4 to 18 */
-      color:    lighten(#606c76, 30%)
-      opacity:  1
-    
-    input:focus::-moz-placeholder, /* Mozilla Firefox 19+ */
-    textarea:focus::-moz-placeholder /* Mozilla Firefox 19+ */
-      color:    lighten(#606c76, 30%)
-      opacity:  1
-    
-    input:focus:-ms-input-placeholder, /* Internet Explorer 10-11 */
-    textarea:focus:-ms-input-placeholder /* Internet Explorer 10-11 */
-      color:    lighten(#606c76, 30%)
-    
     .submit
       background-color: $color-accent
       color: rgba(0,0,0,.3)
+      border: none
+      @extend .ease
       &:hover
         background-color: lighten($color-accent, 10%)
       @media #{$mobile}
