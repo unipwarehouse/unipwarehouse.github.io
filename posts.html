@@ -14,7 +14,6 @@ cover: /blog-background.svg
 
 	<div class="container text-center">
 
-		<section>
 		{% for post in site.posts %}
 			<div class="row post-item">
 				<div class="column column-25">
@@ -31,11 +30,10 @@ cover: /blog-background.svg
 
 					{{ post.excerpt }}
 
-					<p>{% if post.categories %}In {% for cat in post.categories %}<a href="{{ site.baseurl }}/posts/{{ cat }}/">{{ cat }}</a> {% endfor %} - {% endif %}{{ post.date | timeago | date_to_string }}&emsp;{% if post.tags %}<span class="tags">{% for tag in post.tags %}<a href="{{ site.baseurl }}/tags/{{ tag }}/">{{ tag | prepend: '#' }}</a> {% endfor %}</span>{% endif %}</p>
+					<p>{% if post.categories %}In {% for cat in post.categories %}<a href="{{ site.baseurl }}/posts/{{ cat }}/">{{ cat }}</a> {% endfor %} - {% endif %}{{ post.date | timeago | date_to_string }}&emsp;<br/>{% if post.tags %}<span class="tags">{% for tag in post.tags %}<a href="{{ site.baseurl }}/tags/{{ tag }}/">{{ tag | prepend: '#' }}</a> {% endfor %}</span>{% endif %}</p>
 				</div>
 			</div>
 		{% endfor %}
-		</section>
 
 	</div>
 
