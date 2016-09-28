@@ -26,7 +26,16 @@ Lalu bagaimana dengan masalah pribadi saya soal jaringan internet tadi? Tenang. 
 
 Bahkan jika perlu, saya bisa sewaktu-waktu memindahkan folder projek tadi di lokasi mana saja dan menjalankannya dimanapun komputer yang terinstall tool Jekyll, tidak seperti CMS yang harus berada di lokasi tertentu. Jadi, memang benar-benar sangat fleksibel!
 
-Jekyll juga dikenal sebagai CMS berformat flat-file. Artinya saya tidak perlu menggunakan database seperti MySQL, SQLite, PostgreSQL, MongoDB, untuk dependensinya. Serius deh! Kita hanya perlu menyusun artikel saya seperti biasanya saya mengelola file di komputer. Saya hanya perlu membuat satu file markdown dalam folder bernama `_post` jika itu sebuah artikel atau sesuai dengan nama `collection` atau jenis konten yang saya buat, misal `_album`, `_portfolio`, dll. Kalau saya ingin mengelompokkannya ke beberapa kategori, saya hanya perlu menempatkan ke dalam subfolder di dalamnya, atau yang paling mudah adalah dengan menambahkan *YAML frontmatter* di bagian atas file artikel saya dengan `categroies: desain tutorial-pemula dst dkk dll` (dipisah dengan spasi). Hal ini pula yang membuat Jekyll menjadi lebih cepat dalam proses *generate* halaman website saya. Sekali lagi **TANPA PERLU DATABASE**!
+Jekyll juga dikenal sebagai CMS berformat flat-file. Artinya saya tidak perlu menggunakan database seperti MySQL, SQLite, PostgreSQL, MongoDB, untuk dependensinya. Serius deh! Kita hanya perlu menyusun artikel saya seperti biasanya saya mengelola file di komputer. Saya hanya perlu membuat satu file markdown dalam folder bernama `_post` jika itu sebuah artikel atau sesuai dengan nama `collection` atau jenis konten yang saya buat, misal `_album`, `_portfolio`, dll. Kalau saya ingin mengelompokkannya ke beberapa kategori, saya hanya perlu menempatkan ke dalam subfolder di dalamnya, atau yang paling mudah adalah dengan menambahkan *YAML frontmatter* di bagian atas file artikel saya dengan 
+
+{% highlight YAML %}
+---
+categories: desain tutorial-inkscape dkk dll dst
+# dipisah dengan spasi
+---
+{% endhighlight %}
+
+Hal ini pula yang membuat Jekyll menjadi lebih cepat dalam proses *generate* halaman website saya. Sekali lagi **TANPA PERLU DATABASE**!
 
 Saya juga menggunakan program version control [Git](http://git-scm.com), untuk mengelola perubahan dan versioning website saya agar lebih mudah. Keuntungan utama yang saya dapat, jika terjadi kesalahan selama proses development website, saya bisa mengembalikannya ke keadaan sebelum terjadi kesalahan. Ini sama seperti fungsi *undo* dan *redo* dalam setiap program pengolah file, hanya saja yang dikelola tidak hanya satu file saja, tapi satu projek!
 
@@ -50,7 +59,7 @@ Tapi kalau teman-teman ingin menggunakan hosting seperti pada umumnya juga bisa,
 
 Selanjutnya, Bagi teman-teman yang penasaran bisa langsung mencoba menggunakan Jekyll dengan beberapa perintah saja. Ingat, komputer harus [memenuhi kebutuhan](https://jekyllrb.com/docs/installation/#requirements) agar proses berjalan dengan lancar.
 
-{% highlight shell %}
+{% highlight bash %}
 ~ $ gem install jekyll bundler
 ~ $ jekyll new nama_projek
 ~ $ cd nama_projek
