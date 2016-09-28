@@ -11,11 +11,15 @@ logo_small: "/img/logo-icon.svg"
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 
 exclude:
   - resource
   - Gemfile
   - Gemfile.lock
+  - database.rules.json
+  - firebase.json
+  - .firebaserc
 
 # Collections
 collections:
