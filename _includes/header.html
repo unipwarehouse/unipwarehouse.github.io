@@ -1,13 +1,13 @@
 <header id="home"{% if page.cover %} style="background-image: url('{{ site.baseurl }}/img{{ page.cover }}');{% endif %}{% if page.menu_title == 'Home' %}background-size: contain;{% endif %}">
 	<nav class="topnav clearfix">
 		<h1 class="float-left">
-			<a href="{{ site.url | append: site.baseurl }}">
+			<a class="logo" href="{{ site.url | append: site.baseurl }}">
 				<img class="logo-lg" src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
 				<img class="logo-sm" src="{{ site.logo_small | prepend: site.baseurl }}" alt="{{ site.title }}">
 			</a>
 		</h1>
 
-		<ul class="list-inline float-right">
+		<ul class="menu-top list-inline float-right">
 		{% assign menu_pages = site.html_pages | sort: 'index' %}
 		{% for p in menu_pages limit 3 %}
 			{% if p.menu_title %}
