@@ -5,37 +5,35 @@ type: work
 {% include header.html %}
 
 <div id="content">
-	<section>
-		<div class="container text-center">
-			<div class="row text-left">
-				<div class="column">
+  <div class="container text-center">
+    <div class="row text-left">
+      <div class="column">
 
-					{{ content }}
-					
-				</div>
+        {{ content }}
+        
+      </div>
 
-				<div class="column column-40">
-					<h4>Tags</h4>
-					{% for tag in page.tags %}
-						<a href="{{ site.baseurl }}/tags/{{ tag }}/">{{ tag | prepend: '#' }}</a>&ensp;
-					{% endfor %}
-					
-					<div class="license">
-						<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
-					</div>
-				</div>
-			</div>
-			
-			<p class="pager">
-				<a href="javascript:history.back()" class="button button-outline">BACK TO LIST</a>
-			</p>
-			
-			{% if jekyll.environment == 'production' %}
-				{% include disqus.html %}
-			{% endif %}
+      <div class="column column-40">
+        <h4>Tags</h4>
+        {% for tag in page.tags %}
+          <a href="{{ site.baseurl }}/tags/{{ tag }}/">{{ tag | prepend: '#' }}</a>&ensp;
+        {% endfor %}
+        
+        <div class="license">
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+        </div>
+      </div>
+    </div>
+    
+    <p class="pager">
+      <a href="{{ site.url }}{{ site.baseurl }}/works" class="button button-outline">MORE WORK ITEM</a>
+    </p>
+    
+    {% if jekyll.environment == 'production' %}
+      {% include disqus.html %}
+    {% endif %}
 
-		</div>
-	</section>
+  </div>
 </div>
 
 {% include footer.html %}
