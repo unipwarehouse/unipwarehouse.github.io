@@ -4,7 +4,7 @@
 		<h2>My Works</h2>
 		<div class="accent"></div>
 		
-		<div class="row thumbs">
+		<div class="row row-wrap thumbs">
 		{% assign artwork = site.works | sort: 'date' %}
 		{% for work in artwork reversed %}
 			<div class="column column-25 works-item" data-aos="fade-up" data-aos-delay="500"><a href="{{ work.url | prepend: site.baseurl }}">
