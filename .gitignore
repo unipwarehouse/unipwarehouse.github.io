@@ -7,3 +7,6 @@ services.html
 _site/
 _sass/milligram/
 **/resize.sh
+.firebaserc
+firebase.json
+database.rules.json
