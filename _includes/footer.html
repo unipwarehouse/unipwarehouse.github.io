@@ -1,0 +1,39 @@
+<footer id="footer">
+	{% include contact-form.html %}
+
+	{% comment %}
+	{% if jekyll.environment == 'production' %}
+		{% include typeform.html %}
+	{% endif %}
+	{% endcomment %}
+
+	<div class="container">
+		<div class="row footer-caption">
+			<div class="column column-45 text-right footer-logo">
+				<a href="{{ site.url | append: site.baseurl }}"><img src="{{ '/img/logo-horizontal.svg' | prepend: site.baseurl }}" alt="Unip Warehouse"></a>
+				<address>
+					<p>Pati Regency<br>
+						 Jl. Roromendut No. 65<br>	
+						 Central Java, 59116</p>	
+				</address>
+
+				<!-- <p class="social">
+					<a class="facebook" href="http://facebook.com/unipwarehouse/" target="_blank">Facebook Page</a>
+				</p> -->
+			</div>
+			<div class="column column-45 column-offset-10 footer-note">
+				<ul class="list-inline">
+				{% for page in menu_pages %}
+					{% if page.menu_title %}
+					<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.menu_title }}</a></li>	
+					{% endif %}
+				{% endfor %}
+				</ul>
+
+				<p>Crafted with <span class="icon-favorite"></span> by Unip Warehouse<br />
+				Built with <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, hosted on <a href="http://github.com" target="_blank">Github</a><br />
+				Copyright &copy; 2016. Some rights reserved.</p>
+			</div>
+		</div>
+	</div>
+</footer>

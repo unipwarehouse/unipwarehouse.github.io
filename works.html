@@ -1,0 +1,37 @@
+---
+layout: default
+title: Works
+payoff: Perfection comes for those who practice...
+menu_title: Works
+index: 2
+permalink: /works/
+arrow_down: false
+cover: /works-background.svg
+---
+{% include header.html %}
+
+<div id="content">
+
+	<section id="works">
+		<div class="container text-center">
+
+			<div class="row thumbs row-wrap">
+			{% assign artwork = site.works | sort: 'date' %}
+			{% for work in artwork reversed %}
+				<div class="column column-25 works-item"><a href="{{ work.url | prepend: site.baseurl }}">
+					<img src="{{ site.baseurl }}/img{{ work.thumb }}" alt="{{ work.title }}">
+				</a></div>
+			{% endfor %}
+			</div>
+
+			{% if site.works == null %}
+				<p class="warning text-center">Woops! Seems like we still in preparation collecting some works.<br>
+				Please check back later...</p>
+			{% endif %}
+
+		</div>
+	</section>
+
+</div>
+
+{% include footer.html %}

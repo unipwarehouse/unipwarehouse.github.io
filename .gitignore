@@ -1,0 +1,12 @@
+resource/
+services.html
+**/.sass-cache
+**/.sass-cache/
+.sass-cache/
+**/.fuse_hidden*
+_site/
+_sass/milligram/
+**/resize.sh
+.firebaserc
+firebase.json
+database.rules.json

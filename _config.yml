@@ -1,0 +1,50 @@
+title: Unip Warehouse
+payoff: Believe in Design
+email: hello@unipwarehouse.com
+description: >
+  I'm Hanif, a freelance Javanese illustrator and graphic designer<br>
+  Based in Pati, Central Java.
+baseurl: "/alpha"
+url: "http://unipwarehouse.github.io"
+logo: "/img/logo-horizontal.svg"
+logo_small: "/img/logo-icon.svg"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - resource
+  - Gemfile
+  - Gemfile.lock
+  - database.rules.json
+  - firebase.json
+  - .firebaserc
+
+# Collections
+collections:
+  posts:
+    permalink: /posts/:categories/:title
+  works:
+    defaults:
+      type: work
+      layout: work
+    permalink: /works/:categories/:title
+    output: true
+
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+      type: "post"
+  -
+    scope:
+      type: "works"
+    values:
+      layout: "work"
+      type: "work"
+
+sass:
+  style: compressed

@@ -1,0 +1,49 @@
+<header id="home"{% if page.cover %} style="background-image: url('{{ site.baseurl }}/img{{ page.cover }}');{% endif %}{% if page.menu_title == 'Home' %}background-size: contain;{% endif %}">
+	<nav class="topnav clearfix">
+		<h1 class="float-left">
+			<a class="logo" href="{{ site.url | append: site.baseurl }}">
+				<img class="logo-lg" src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
+				<img class="logo-sm" src="{{ site.logo_small | prepend: site.baseurl }}" alt="{{ site.title }}">
+			</a>
+		</h1>
+
+		<ul class="menu-top list-inline float-right">
+		{% assign menu_pages = site.html_pages | sort: 'index' %}
+		{% for p in menu_pages limit 3 %}
+			{% if p.menu_title %}
+			<li{% if page.url == p.url %} class="active"{% endif %}><a href="{{ p.url | prepend: site.baseurl }}">{{ p.menu_title }}</a></li>
+			{% endif %}
+		{% endfor %}
+		</ul>
+	</nav>
+
+	<div class="{% if page.menu_title == 'Home' %}frontpage{% else %}caption text-center{% endif %}">
+		{% if page.type == 'post' %}
+		<div class="container">
+		{% endif %}
+			<h2 class="text-center" data-aos="fade-up">{% if page.menu_title == 'Home' %}Hello!{% else %}{{ page.title }}{% endif %}</h2>
+			{% if page.type == 'work' %}
+			<p>{% for cat in page.categories %}In <a href="{{ site.baseurl }}/works/{{ cat }}/">{{ cat }}</a> {% endfor %}{{ page.date | timeago | date_to_string }}</p>
+			<img class="work-item" src="{{ site.baseurl }}/img{{ page.item }}" alt="{{ page.title }}">
+			{% endif %}
+
+			<p data-aos="fade-up" data-aos-delay="800">{% if page.menu_title == 'Home' %}{{ site.description }}{% else %}{{ page.payoff }}{% endif %}</p>
+
+			{% if page.type == 'post' %}
+				<p data-aos="fade-up" data-aos-delay="800">
+					In <a href="{{ site.baseurl }}/posts/{{ page.categories }}/">{{ page.categories }}</a> - {{ page.date | timeago | date_to_string }}
+				</p>
+			{% endif %}
+
+			{% if page.arrow_down %}
+				<a class="direction" href="#content" data-aos="fade-up" data-aos-delay="1100"><span class="icon-arrow_downward"></span></a>
+			{% endif %}
+
+		{% if page.type == 'post' %}
+		</div>
+		{% endif %}
+		{% if page.cover_credit %}
+			<small class="credit">Image credit to {{ page.cover_credit }}</small>
+		{% endif %}
+	</div>
+</header>

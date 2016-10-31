@@ -1,0 +1,42 @@
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{% if page.menu_title == 'Home' %}{{ site.title }}{% else %}{{ page.title }}{% endif %} | {% if page.menu_title == 'Home' %}{{ site.payoff | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}</title>
+	<meta name="description" content="{% if page.menu_title == 'Home' %}{{ site.description | strip_newlines | strip_html }}{% elsif page.menu_title == 'Works' or page.menu_title == 'Blog' %}{{ page.payoff }}{% elsif page.type == 'work' or page.type == 'post' %}{{ page.content | truncate: 155 | strip_newlines | strip_html }}{% endif %}" property="og:description">
+	<meta name="keyword" content="{% for tag in page.tags %}{{ tag | append: ', ' }}{% endfor %}">
+
+	<!-- Open Graph -->
+	<meta content="{{ page.url }}" property="og:url">
+	<meta content="{% if page.menu_title == 'Home' %}{{ site.title }}{% else %}{{ page.title }}{% endif %} | {% if page.menu_title == 'Home' %}{{ site.payoff | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}" property="og:title">
+	{% if page.menu_title %}
+	<meta content="{{ site.url }}{{ site.baseurl }}/img/logo-high-resolution.png" property="og:image">
+	{% elsif page.item %}
+	<meta content="{{ site.url }}{{ site.baseurl }}/img{{ page.item }}" property="og:image">
+	{% elsif page.cover %}
+	<meta content="{{ site.url }}{{ site.baseurl }}/img{{ page.cover }}" property="og:image">
+	{% else %}
+  <meta content="{{ site.url }}{{ site.baseurl }}/img/logo-high-resolution.png" property="og:image">
+	{% endif %}
+
+	<!-- Web App manifests -->
+	<meta name="theme-color" content="#71c837">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	
+	<!-- CSS Reset -->
+	<link rel="stylesheet" href="{{ "/css/normalize.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ "/css/milligram.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ "/css/aos.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ "/css/icomoon.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ "/css/syntax-monokai.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+	<link rel="icon" href="{{ "/favicon.png" | prepend: site.baseurl }}" sizes="192x192" />
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>

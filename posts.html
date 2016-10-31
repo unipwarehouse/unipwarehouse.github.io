@@ -1,0 +1,43 @@
+---
+layout: default
+title: Blog
+payoff: Some vitamins for your creative brain
+menu_title: Blog
+index: 3
+permalink: /blog/
+arrow_down: false
+cover: /blog-background.svg
+---
+{% include header.html %}
+
+<div id="content">
+
+	<div class="container text-center">
+
+		{% for post in site.posts %}
+			<div class="row post-item">
+				<div class="column column-25">
+					<a class="thumb" href="{{ post.url | prepend: site.baseurl }}">
+						{% if post.thumb %}
+							<img src="{{ site.baseurl }}/img/posts/thumbs/{{ post.thumb }}" alt="{{ post.title }}">
+						{% else %}
+							<img src="{{ "/img/post-thumb.svg" | prepend: site.baseurl }}" alt="{{ post.title }}">
+						{% endif %}
+					</a>
+					</div>
+				<div class="column text-left post-body">
+					<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+
+					{{ post.excerpt }}
+
+					<p>{% if post.categories %}In {% for cat in post.categories %}<a href="{{ site.baseurl }}/posts/{{ cat }}/">{{ cat }}</a> {% endfor %} - {% endif %}{{ post.date | timeago | date_to_string }}&emsp;<br/>{% if post.tags %}<span class="tags">{% for tag in post.tags %}<a href="{{ site.baseurl }}/tags/{{ tag }}/">{{ tag | prepend: '#' }}</a> {% endfor %}</span>{% endif %}</p>
+				</div>
+			</div>
+		{% endfor %}
+
+	</div>
+
+
+</div>
+
+{% include footer.html %}

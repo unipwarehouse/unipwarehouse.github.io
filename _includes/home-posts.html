@@ -1,0 +1,40 @@
+<!-- POSTS -->
+<section id="posts" class="text-center">
+	<div class="container">
+		<h2>From The Blog</h2>
+		<div class="accent green"></div>
+
+		<div class="row row-wrap">
+		{% for post in site.posts limit: 4 %}
+			<div class="column column-50">
+				<div class="row post-item">
+					<div class="column column-25">
+						<a href="{{ post.url | prepend: site.baseurl }}" class="thumb">
+						{% if post.thumb %}
+							<img src="{{ site.baseurl }}/img/posts/thumbs/{{ post.thumb }}" alt="Thumb">
+						{% else %}
+							<img src="{{ '/img/post-thumb.svg' | prepend: site.baseurl }}" alt="Thumb">
+						{% endif %}
+						</a>
+					</div>
+					<div class="column post-body text-left">
+						<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+						{% comment %}{{ post.content | truncatewords: 30 | strip_newlines }}{% endcomment %}
+						{{ post.excerpt }}
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+		</div>
+
+		{% if site.posts == null %}
+			<p class="warning text-center">Oh dear... Where are the posts??</p>
+		{% endif %}
+
+	</div>
+
+	{% if site.posts > 4 %}
+		<a href="posts.html" class="button button-outline">SEE OTHER POSTS</a>
+	{% endif %}
+</section>
+<!-- /POSTS -->

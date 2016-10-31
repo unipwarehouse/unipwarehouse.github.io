@@ -1,0 +1,70 @@
+// WORK ITEM
+
+body#work
+	.topnav
+		background-color: $color-primary
+		position: fixed
+		z-index: 5
+
+	header
+		color: inherit
+		height: auto
+		background-color: transparent
+
+		.work-item
+			max-width: 100%
+			max-height: 800px
+			border-radius: $border-radius
+			box-shadow: 0 3px 5px rgba(0,0,0,.3)
+
+		.caption
+			margin: 150px auto 0
+			text-shadow: none
+			@media #{$mobile}
+				margin-top: 70px
+
+			h2
+				color: $color-primary
+				@media #{$mobile}
+					font-size: 3rem
+			
+			p
+				@media #{$mobile}
+					font-size: 1.6rem
+
+	#content
+		background-color: transparent
+		background-image: none
+
+		section
+			padding: 40px 0
+
+		.spotlight
+			margin-top: 3rem
+			margin-bottom: 3rem
+			img
+				margin: 0
+
+		ul
+			list-style-position: outside
+			li
+				margin-left: 20px
+				
+		a.figure
+			display: inline-block
+			
+		img
+			margin: 0 0 2rem
+			max-width: 100%
+			max-height: 600px
+			border-radius: $border-radius
+
+		.license
+			margin: 20px 0
+			font-size: 1.3rem
+
+		.pager, .comment
+			margin-top: 50px
+
+		.comment
+			text-align: left
