@@ -1,5 +1,5 @@
 ---
-title: Daah CMS, Hello Jekyll!
+title: Bye CMS, Hello Jekyll!
 date: 2016-06-19
 categories: misc
 tags: cms wordpress jekyll static-site github github-pages
