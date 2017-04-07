@@ -6,6 +6,15 @@
 	<meta name="description" content="{% if page.menu_title == 'Home' %}{{ site.description | strip_newlines | strip_html }}{% elsif page.menu_title == 'Works' or page.menu_title == 'Blog' %}{{ page.payoff }}{% elsif page.type == 'work' or page.type == 'post' %}{{ page.content | truncate: 155 | strip_newlines | strip_html }}{% endif %}" property="og:description">
 	<meta name="keyword" content="{% for tag in page.tags %}{{ tag | append: ', ' }}{% endfor %}">
 
+	<!-- Google AdSense -->
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+	    google_ad_client: "ca-pub-6813257777545667",
+	    enable_page_level_ads: true
+	  });
+	</script>
+
 	<!-- Open Graph -->
 	<meta content="{{ page.url }}" property="og:url">
 	<meta content="{% if page.menu_title == 'Home' %}{{ site.title }}{% else %}{{ page.title }}{% endif %} | {% if page.menu_title == 'Home' %}{{ site.payoff | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}" property="og:title">
@@ -23,7 +32,7 @@
 	<meta name="theme-color" content="#212121">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="mobile-web-app-capable" content="yes">
-	
+
 	<!-- CSS Reset -->
 	<link rel="stylesheet" href="{{ "/css/normalize.css" | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ "/css/milligram.css" | prepend: site.baseurl }}">
