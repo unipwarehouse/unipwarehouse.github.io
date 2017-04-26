@@ -10,3 +10,4 @@ _sass/milligram/
 .firebaserc
 firebase.json
 database.rules.json
+.vscode/
