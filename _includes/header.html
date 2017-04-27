@@ -1,7 +1,8 @@
-<header id="home"{% if page.cover %} style="background-image: url('{{ site.baseurl }}/img{{ page.cover }}');{% endif %}{% if page.menu_title == 'Home' %}background-size: contain;{% endif %}">
+<header id="home"
+	{% if page.cover %} style="background-image: url('{{ '/img/' | absolute_url }}{{ page.cover }}'){% if page.menu_title == 'Home' %}, -webkit-linear-gradient(-45deg, rgba(102,180,50,1) 0%,rgba(102,180,50,1) 45%,rgba(113,200,55,1) 45%,rgba(113,200,55,1) 100%), linear-gradient(135deg, rgba(102,180,50,1) 0%,rgba(102,180,50,1) 45%,rgba(113,200,55,1) 45%,rgba(113,200,55,1) 100%); background-size: contain{% endif %};{% endif %}">
 	<nav class="topnav clearfix">
 		<h1 class="float-left">
-			<a class="logo" href="{{ site.url | append: site.baseurl }}">
+			<a class="logo" href="{{ "/" | absolute_url }}">
 				<img class="logo-lg" src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
 				<img class="logo-sm" src="{{ site.logo_small | prepend: site.baseurl }}" alt="{{ site.title }}">
 			</a>
@@ -11,7 +12,7 @@
 		{% assign menu_pages = site.html_pages | sort: 'index' %}
 		{% for p in menu_pages limit 3 %}
 			{% if p.menu_title %}
-			<li{% if page.url == p.url %} class="active"{% endif %}><a href="{{ p.url | prepend: site.baseurl }}">{{ p.menu_title }}</a></li>
+			<li{% if page.url == p.url %} class="active"{% endif %}><a href="{{ p.url | absolute_url }}">{{ p.menu_title }}</a></li>
 			{% endif %}
 		{% endfor %}
 		</ul>
@@ -23,15 +24,15 @@
 		{% endif %}
 			<h2 class="text-center" data-aos="fade-up">{% if page.menu_title == 'Home' %}Hello!{% else %}{{ page.title }}{% endif %}</h2>
 			{% if page.type == 'work' %}
-			<p>{% for cat in page.categories %}In <a href="{{ site.baseurl }}/works/{{ cat }}/">{{ cat }}</a> {% endfor %}{{ page.date | timeago | date_to_string }}</p>
-			<img class="work-item" src="{{ site.baseurl }}/img{{ page.item }}" alt="{{ page.title }}">
+			<p>{% for cat in page.categories %}In <a href="{{ "/works/" | absolute_url }}{{ cat }}/">{{ cat }}</a> {% endfor %}{{ page.date | timeago | date_to_string }}</p>
+			<img class="work-item" src="{{ "/img" | absolute_url }}{{ page.item }}" alt="{{ page.title }}">
 			{% endif %}
 
 			<p data-aos="fade-up" data-aos-delay="800">{% if page.menu_title == 'Home' %}{{ site.description }}{% else %}{{ page.payoff }}{% endif %}</p>
 
 			{% if page.type == 'post' %}
 				<p data-aos="fade-up" data-aos-delay="800">
-					In <a href="{{ site.baseurl }}/posts/{{ page.categories }}/">{{ page.categories }}</a> - {{ page.date | timeago | date_to_string }}
+					In <a href="{{ "/posts/" | absolute_url }}{{ page.categories }}/">{{ page.categories }}</a> - {{ page.date | timeago | date_to_string }}
 				</p>
 			{% endif %}
 
