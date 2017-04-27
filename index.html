@@ -2,20 +2,20 @@
 layout: default
 menu_title: Home
 index: 1
-cover: /header-background.svg
+cover: header-background.svg
 ---
 {% include header.html %}
 
 <div id="content">
-	
+
 	{% include navfix.html %}
 
 	{% include home-services.html %}
-	
+
 	{% if site.works != null %}
 		{% include home-works.html %}
 	{% endif %}
-	
+
 	{% if site.posts != null %}
 		{% include home-posts.html %}
 	{% endif %}

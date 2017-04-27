@@ -8,11 +8,11 @@ type: post
     <article>
       {{ content }}
 
-      {% if page.tags %}<p class="tags">{% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/{{ tag }}/" alt="">{{ tag | prepend: '#' | append: ' ' }}</a>{% endfor %}</p>{% endif %}
+      {% if page.tags %}<p class="tags">{% for tag in page.tags %}<a href="{{ "/tags/" | absolute_url }}{{ tag }}/" alt="">{{ tag | prepend: '#' | append: ' ' }}</a>{% endfor %}</p>{% endif %}
     </article>
 
     <p class="pager text-center">
-      <a href="{{ site.url }}{{ site.baseurl }}/posts" class="button button-outline">MORE ARTICLES</a>
+      <a href="{{ "/posts/" | absolute_url }}" class="button button-outline">MORE ARTICLES</a>
     </p>
 
     {% if jekyll.environment == 'production' %}
