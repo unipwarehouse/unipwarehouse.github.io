@@ -1,12 +1,10 @@
 Unip Warehouse
 ==============
 
-This is source for Unip Warehouse parking page. Still waiting, though.
+This is sourcecode for Unip Warehouse parking page.
 
-I'm planning to use [Jekyll][jekyll] for my upcoming full functional website and migrate from my shared hosting to fully hosted on Github.
-
-Meanwhile, get in touch with me and my projects at my [Facebook Page][facebook-page] and [Instagram][instagram].
+I use [Jekyll][jekyll] for this website and migrate from my shared hosting to fully hosted on Github. Get in touch with me and my projects at my [Facebook Page][facebook-page] and [Telegram](telegram).
 
 [jekyll]: http://jekyllrb.com
 [facebook-page]: http://facebook.com/unipwarehouse
-[instagram]: http://instagram.com/unipwarehouse
+[telegram]: http://telegram.me/hellounip
