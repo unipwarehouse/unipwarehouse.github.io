@@ -2,7 +2,7 @@
   "name": "Unip Warehouse",
   "short_name": "Unip",
   "display": "standalone",
-  "theme_color": "##71c837",
+  "theme_color": "#66b432",
   "background_color": "#71c837",
   "description": "Beliefe in Design",
   "start_url": "/?utm_source=homescreen",
