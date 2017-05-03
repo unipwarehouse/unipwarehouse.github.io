@@ -4,8 +4,8 @@
   "display": "standalone",
   "theme_color": "#66b432",
   "background_color": "#71c837",
-  "description": "Beliefe in Design",
-  "start_url": "/?utm_source=homescreen",
+  "description": "Illustration and graphic design service in Pati, Central Java, Indonesia.",
+  "start_url": "/",
   "icons": [{
     "src": "favicon.png",
     "sizes": "48x48",
@@ -30,5 +30,5 @@
     "src": "favicon.png",
     "sizes": "192x192",
     "type": "image/png"
-  }],
+  }]
 }
