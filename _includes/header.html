@@ -48,7 +48,7 @@
 			<h2 class="text-center" data-aos="fade-up">{% if page.menu_title == 'Home' %}Hello!{% else %}{{ page.title }}{% endif %}</h2>
 			{% if page.type == 'work' %}
 			<p>{% for cat in page.categories %}In <a href="{{ "/works/" | absolute_url }}{{ cat }}/">{{ cat }}</a> {% endfor %}{{ page.date | timeago | date_to_string }}</p>
-			<img class="work-item" src="{{ "/img" | absolute_url }}{{ page.item }}" alt="{{ page.title }}">
+			<img class="work-item" src="/img{{ page.item }}" alt="{{ page.title }}">
 			{% endif %}
 
 			<p data-aos="fade-up" data-aos-delay="800">{% if page.menu_title == 'Home' %}{{ site.description }}{% else %}{{ page.payoff }}{% endif %}</p>
