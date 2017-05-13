@@ -19,7 +19,7 @@ cover: works-background.svg
 			{% assign artwork = site.works | sort: 'date' %}
 			{% for work in artwork reversed %}
 				<div class="column column-25 works-item"><a href="{{ work.url | absolute_url }}">
-					<img src="{{ "/img" | absolute_url }}{{ work.thumb }}" alt="{{ work.title }}">
+					<img src="/img{{ work.thumb }}" alt="{{ work.title }}">
 				</a></div>
 			{% endfor %}
 			</div>
