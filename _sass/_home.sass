@@ -238,22 +238,25 @@ header
         margin-left: 0
       &:last-child
         margin-right: 0
-      a
-        height: 200px
-        background-color: $color-primary
-        display: block
-        overflow: hidden
-        border-radius: $border-radius
-        box-shadow: 0 3px 5px rgba(0,0,0,.3)
+      
+      .works-content
+        +aspect-ratio(1, 1)
 
-        &:hover
-          box-shadow: 0 3px 20px rgba(0,0,0,.3)
+        a
+          background-color: $color-primary
+          display: block
+          overflow: hidden
+          border-radius: $border-radius
+          box-shadow: 0 3px 5px rgba(0,0,0,.3)
+
+          &:hover
+            box-shadow: 0 3px 20px rgba(0,0,0,.3)
 
 
-        img
-          width: 100%
-          height: 100%
-          object-fit: cover
+          img
+            width: 100%
+            height: 100%
+            object-fit: cover
 
 
   h2
