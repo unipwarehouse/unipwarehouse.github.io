@@ -15,7 +15,7 @@ type: post
       <a href="{{ "/posts/" | absolute_url }}" class="button button-outline">MORE ARTICLES</a>
     </p>
 
-    {% if jekyll.environment == 'production' %}
+    {% if jekyll.environment == 'production' and page.comment != false %}
       {% include disqus.html %}
     {% endif %}
   </div>
