@@ -5,6 +5,7 @@ categories: misc
 cover: /posts/liputan6.com-software-bajakan.jpg
 cover_credit: www.liputan6.com
 tags: software app bajakan rizki halal downloadfree photoshop coreldraw
+published: false
 ---
 
 Membahas masalah pembajakan software memang tidak ada habisnya, terutama di Indonesia. Bermacam alasan muncul demi melegalkan masyarakat kita untuk menggunakan software bajakan. Alasan mengapa masyarakat memakainya diantaranya mulai dari minimnya informasi penggunaan software sampai dengan faktor ekonomi dalam hal pembelian lisensi software.
