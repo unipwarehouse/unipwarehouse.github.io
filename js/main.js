@@ -3,6 +3,9 @@ $(document).ready(function(){
 	var na  = $(".navbar-affix");
 	var nas = "navbar-affix-scrolled";
 	var hdr = $('header').outerHeight();
+	var year = $('.copy-year');
+
+	year.textContent = new Date().getFullYear();
 
 	$(window).scroll(function() {
 	  if( $(this).scrollTop() > hdr - na.outerHeight()) {
